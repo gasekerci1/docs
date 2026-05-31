@@ -1,145 +1,80 @@
 # Canonical Gap Check
 
-Current status: gap check against `docs/02_product/becomingos_product_specification.docx`. This document does not rewrite product scope, approve public MVP build, approve production readiness, approve archive actions, or authorise implementation work.
+Current status: gap check only. This document does not approve public MVP build, production readiness, archive actions, product-scope changes, or implementation work.
 
-## Existing Canonical Root Files Checked
+Comparison source: `docs/02_product/becomingos_product_specification.docx`.
 
-| Canonical root file | Status against source of truth | Gap summary |
-|---|---|---|
-| `README.md` | Present | Records source-of-truth repository, stage, root canonical structure, no public build, and no production readiness. Needs update after filename conflict is resolved. |
-| `00_repository_control/source_of_truth_register.md` | Present | Captures source hierarchy and key decisions. Filename mismatch remains unresolved. |
-| `00_repository_control/owner_decision_register.md` | Present | Captures DEC-001 to DEC-030 outcomes. Needs future dates/owner sign-off metadata if required. |
-| `00_repository_control/canonical_rewrite_instructions.md` | Present | Captures future-agent rewrite rules. Needs update if owner approves any archive or structure change. |
-| `00_repository_control/source_traceability_map.md` | Present | Created as current traceability map. Needs maintenance as new canonical docs are created. |
-| `00_repository_control/archive_candidate_plan.md` | Present | Created as candidate plan only. No archive approval. |
-| `00_repository_control/canonical_gap_check.md` | Present | Current file. |
-| `02_product/product_brief.md` | Present but incomplete | Summarises vision/stage/pillars/boundaries. Needs fuller audience, value proposition, and evidence links after research validation. |
-| `02_product/product_requirements.md` | Present but incomplete | Captures core pillars and private beta requirements. Needs detailed acceptance criteria only after owner approves scope and evidence gates. |
-| `02_product/terminology_and_naming.md` | Present | Captures BecomingOS/lifeOS naming. Needs brand/tone follow-up after brand finalisation. |
-| `02_product/private_beta_scope.md` | Present but incomplete | Defines beta boundaries and safeguards. Needs actual consent notice, operational procedure, owner-approved retention, and tester governance. |
-| `05_ai_memory_data/ai_memory_governance.md` | Present but incomplete | Captures draft AI, confirmation, exclusion, embedding, and provider approval rules. Needs detailed memory model, retrieval rules, provider review, and data model. |
-| `06_privacy_legal_safety/safety_boundaries.md` | Present | Captures non-emergency, non-clinical, non-professional-advice boundaries. Needs crisis localization and support-resource governance in a separate doc. |
-| `06_privacy_legal_safety/private_beta_consent_requirements.md` | Present but incomplete | Captures consent categories and principles. Needs final participant-facing notice, jurisdiction review, AI provider details, and operational request procedures. |
+Root canonical docs checked:
 
-## Missing Canonical Documents
+- `README.md`
+- `00_repository_control/source_of_truth_register.md`
+- `00_repository_control/owner_decision_register.md`
+- `00_repository_control/canonical_rewrite_instructions.md`
+- `00_repository_control/source_traceability_map.md`
+- `00_repository_control/archive_candidate_plan.md`
+- `00_repository_control/canonical_gap_check.md`
+- `00_repository_control/root_vs_nested_docs_reconciliation.md`
+- `02_product/product_brief.md`
+- `02_product/product_requirements.md`
+- `02_product/terminology_and_naming.md`
+- `02_product/private_beta_scope.md`
+- `05_ai_memory_data/ai_memory_governance.md`
+- `06_privacy_legal_safety/safety_boundaries.md`
+- `06_privacy_legal_safety/private_beta_consent_requirements.md`
 
-| Missing document | Why needed | Current source evidence |
-|---|---|---|
-| `02_product/prototype_scope.md` | Separate prototype/internal validation from private beta and candidate MVP planning. | `01_product/Prototype UX Specification.docx`; research/testing plans. |
-| `02_product/mvp_scope.md` | Mark MVP as candidate planning only with no public build approval. | PRD, MVP question bank, architecture/testing/readiness docs. |
-| `02_product/non_goals.md` | Centralise exclusions: clinical, emergency, professional advice, production/build claims. | Safety, legal, PRD, AI docs. |
-| `03_research_validation/research_summary.md` | Separate evidence from assumptions and accepted recommendations. | Research summary, research plans, market validation report. |
-| `03_research_validation/user_research_plan.md` | Preserve planned user research and safety/consent approach. | User research plan, user testing plan, validation plan. |
-| `03_research_validation/market_validation.md` | Capture market/pricing assumptions without overstating evidence. | Market validation report, product recommendations. |
-| `03_research_validation/evidence_and_assumption_register.md` | Required by DEC-019; prevents invented evidence. | Gap registers, accepted recommendations, P0 reviews. |
-| `04_curriculum_question_system/curriculum_model.md` | Needed to reconcile curriculum/module conflicts. | Curriculum Bible, curriculum design/creation docs, PRD. |
-| `04_curriculum_question_system/question_bank.md` | Needed to preserve question evidence and safety review status. | MVP Question Bank, Question system design. |
-| `05_ai_memory_data/memory_model.md` | Needed for durable memory states and user confirmation lifecycle. | My OS Memory Model, Today Directive, Calendar/Review, Ask AI Model. |
-| `05_ai_memory_data/retrieval_and_embedding_rules.md` | Needed for embedding eligibility, invalidation, deletion, and retrieval rules. | Canonical Data Model, memory utility docs. |
-| `05_ai_memory_data/canonical_data_model.md` | Needed for conceptual data classes, consent scope, deletion/export, and storage assumptions. | Canonical Data Model, privacy/security/architecture docs. |
-| `05_ai_memory_data/ai_evaluation_harness.md` | Needed for AI safety/quality tests before live data use. | AI evaluation harness, testing strategy. |
-| `06_privacy_legal_safety/privacy_consent_data_governance.md` | Needed for broader privacy governance beyond beta consent. | Privacy design pack, canonical data model, legal docs. |
-| `06_privacy_legal_safety/legal_claims_policy.md` | Needed before public copy, launch copy, or broad release. | Legal Claims Review Pack, safety docs, PRD. |
-| `06_privacy_legal_safety/crisis_localisation_policy.md` | Needed to govern signposting without emergency-service claims. | Crisis Localisation Policy Design, safety docs. |
-| `06_privacy_legal_safety/security_threat_model.md` | Needed before any real data environment beyond planning. | Security threat model docs. |
-| `07_architecture_api/conceptual_architecture.md` | Needed to preserve architecture evidence while marking it conceptual only. | MVP architecture blueprint, API and NFR docs. |
-| `07_architecture_api/api_contracts.md` | Needed to keep API drafts conceptual and non-implementation. | API Specification Draft. |
-| `07_architecture_api/non_functional_requirements.md` | Needed for stage-classified quality bars, not production readiness. | NFR docs, accessibility, testing strategy. |
-| `08_operations_testing_accessibility/testing_strategy.md` | Needed for stage-gated testing without implying MVP exists. | Testing Strategy for MVP, validation plan. |
-| `08_operations_testing_accessibility/accessibility_qa_plan.md` | Needed for WCAG 2.2 AA baseline and emotional/cognitive safety checks. | Accessibility QA plan, accessibility requirements. |
-| `08_operations_testing_accessibility/release_readiness_checklist.md` | Needed to document missing MVP and production gates. | Readiness reports, blockers, acceptance checklist. |
-| `09_brand_experience/brand_kit.md` | Needed because prior brand docs conflict with BecomingOS/lifeOS naming. | lifeOS brand kit, brand values. |
-| `09_brand_experience/tone_and_language_guide.md` | Needed for calm, clear, respectful, non-shaming, non-clinical tone. | Wording and tone docs, legal/safety docs. |
+## Gap Register
 
-## Incomplete Canonical Documents
+| Area | Missing or incomplete document | Why needed | Source evidence | Priority | Needed before private beta? | Needed before public MVP/build approval? |
+|---|---|---|---|---|---|---|
+| Owner decisions | Owner decision register metadata update | Current register captures DEC-001 to DEC-030, but lacks decision dates, approver identity, and owner sign-off format. | `00_repository_control/owner_decision_register.md`; nested approval packet | Medium | Yes | Yes |
+| Owner decisions | Unresolved decisions register | Needed to separate approved decisions from still-open items such as filename mismatch, provider terms, beta operations, and app/MVP evidence scope. | Nested gap register; contradiction register; current source traceability map | High | Yes | Yes |
+| Product | `02_product/prototype_scope.md` | Needed to separate prototype/internal validation from private beta and MVP planning. | Prototype UX spec; user testing plans | High | Yes | Yes |
+| Product | `02_product/mvp_scope.md` | Needed to state candidate MVP remains planning only and define evidence gates before any build approval. | PRD; MVP question bank; readiness blockers; source DOCX | Critical | No | Yes |
+| Product | `02_product/non_goals.md` | Needed to centralise exclusions: therapy, diagnosis, treatment, crisis, professional advice, public build, production readiness. | Safety docs; legal claims pack; PRD; source DOCX | High | Yes | Yes |
+| Product | Product requirements detail | Existing `product_requirements.md` summarises pillars but lacks detailed acceptance criteria, dependencies, and stage labels. | Source DOCX; PRD; accepted recommendations | High | Yes | Yes |
+| Research validation | `03_research_validation/evidence_and_assumption_register.md` | Required by DEC-019 and needed to prevent assumptions from being treated as evidence. | Nested gap register; market validation; accepted recommendations; P0 reviews | Critical | Yes | Yes |
+| Research validation | `03_research_validation/research_summary.md` | Needed to separate completed research, planned research, and unsupported claims. | Research Agent Output Summary; research plans | High | Yes | Yes |
+| Research validation | `03_research_validation/user_research_plan.md` | Needed for recruitment, consent, research safety, and beta research protocol. | User Research Plan; User Testing Plan; validation plan | High | Yes | Yes |
+| Research validation | `03_research_validation/market_validation.md` | Needed to keep market and pricing claims as assumptions until evidence exists. | Market validation report; product experience recommendations | Medium | No | Yes |
+| Curriculum/question system | `04_curriculum_question_system/curriculum_model.md` | Needed to reconcile module-scope conflicts and keep curriculum non-clinical. | Curriculum Bible; curriculum design/creation docs; PRD | Medium | No | Yes |
+| Curriculum/question system | `04_curriculum_question_system/question_bank.md` | Needed to preserve question sources, safety review status, skip/pause rules, and AI inference limits. | MVP Question Bank; Question system design | High | Yes, if beta uses questions | Yes |
+| Curriculum/question system | `04_curriculum_question_system/onboarding_modules.md` | Needed for beta onboarding, consent comprehension, and product-boundary education. | Research educational onboarding; prototype spec | High | Yes | Yes |
+| AI/memory/data | `05_ai_memory_data/memory_model.md` | Needed to define draft, confirmed, edited, rejected, deleted, expired, and withdrawn memory states. | My OS Memory Model; Ask AI Model; Canonical Data Model | Critical | Yes | Yes |
+| AI/memory/data | `05_ai_memory_data/retrieval_and_embedding_rules.md` | Needed for confirmed-only embeddings, invalidation on source change/delete, retrieval exclusion rules. | Source DOCX; memory utility docs; canonical data model | Critical | Yes | Yes |
+| AI/memory/data | `05_ai_memory_data/canonical_data_model.md` | Needed to document conceptual data categories, consent scopes, deletion/export, and beta storage assumptions. | Canonical Data Model; privacy design pack | Critical | Yes | Yes |
+| AI/memory/data | `05_ai_memory_data/ai_evaluation_harness.md` | Needed to test AI boundaries, refusals, evidence citation, and non-clinical language before live data. | AI evaluation harness; testing strategy | High | Yes, if AI used in beta | Yes |
+| AI/memory/data | AI provider approval record | Needed before live user data processing to approve retention, training, logging, deletion, and subprocessors. | Source DOCX; AI memory architecture; DEC-017 | Critical | Yes | Yes |
+| Privacy/legal/safety | `06_privacy_legal_safety/privacy_consent_data_governance.md` | Needed for privacy governance beyond beta consent requirements. | Privacy design pack; Canonical Data Model; source DOCX | Critical | Yes | Yes |
+| Privacy/legal/safety | `06_privacy_legal_safety/legal_claims_policy.md` | Needed before public-facing claims, beta wording, broad release, or compliance claims. | Legal Claims Review Pack; safety docs | High | Yes | Yes |
+| Privacy/legal/safety | `06_privacy_legal_safety/crisis_localisation_policy.md` | Needed for signposting governance while preserving non-emergency-service boundary. | Crisis Localisation Policy Design; safety docs | High | Yes | Yes |
+| Privacy/legal/safety | `06_privacy_legal_safety/security_threat_model.md` | Needed before any separate beta environment processes real data. | Security threat model docs | Critical | Yes | Yes |
+| Privacy/legal/safety | Safety logging policy | Needed to define minimal segregated safety logs excluded from memory and analytics. | DEC-009; safety docs; support playbook | Critical | Yes | Yes |
+| Privacy/legal/safety | Support Circle rules | Needed to prevent automatic alerting without prior user consent and defined rules. | Source DOCX; safety boundaries | High | Yes, if included in beta | Yes |
+| Privacy/legal/safety | Beta consent notice final text | Current consent requirements are not a final participant-facing notice. | `private_beta_consent_requirements.md`; source DOCX | Critical | Yes | Yes |
+| Architecture/API | `07_architecture_api/conceptual_architecture.md` | Needed to preserve architecture evidence while marking it conceptual only. | MVP architecture blueprint; readiness reviews | Medium | Yes, if beta environment is planned | Yes |
+| Architecture/API | `07_architecture_api/api_contracts.md` | Needed to mark API drafts as conceptual and prevent implementation assumptions. | API Specification Draft; PRD | Low | No | Yes |
+| Architecture/API | `07_architecture_api/non_functional_requirements.md` | Needed to classify NFRs by stage and avoid production-readiness claims. | NFR docs; accessibility/testing docs | High | Yes | Yes |
+| Architecture/API | Beta environment definition | Needed because private beta requires a separate environment. | Source DOCX; private beta scope | Critical | Yes | Yes |
+| Operations/testing/accessibility | `08_operations_testing_accessibility/testing_strategy.md` | Needed to define beta and future MVP testing without implying MVP exists. | Testing Strategy for MVP; validation plan | High | Yes | Yes |
+| Operations/testing/accessibility | `08_operations_testing_accessibility/accessibility_qa_plan.md` | Needed to apply WCAG 2.2 AA and cognitive/emotional safety checks. | Accessibility QA docs; DEC-023 | High | Yes | Yes |
+| Operations/testing/accessibility | `08_operations_testing_accessibility/operations_support_playbook.md` | Needed to bound support as account/product support, not crisis rescue. | Support playbook; safety docs | High | Yes | Yes |
+| Operations/testing/accessibility | `08_operations_testing_accessibility/analytics_event_taxonomy.md` | Needed to prevent safety/crisis text from entering analytics or memory. | Analytics taxonomy; safety docs; DEC-009 | High | Yes, if analytics used | Yes |
+| Brand/experience | `09_brand_experience/brand_kit.md` | Needed to replace draft LifeOS brand evidence with BecomingOS naming. | lifeOS brand kit; brand docs; source DOCX | Medium | No | Yes |
+| Brand/experience | `09_brand_experience/tone_and_language_guide.md` | Needed to enforce calm, clear, respectful, non-shaming, non-clinical tone. | Wording/tone docs; DEC-027; safety docs | High | Yes | Yes |
+| Brand/experience | Product experience recommendations root doc | Needed to retain useful experience guidance while stripping build/MVP approval implications. | `PRODUCT_EXPERIENCE_RECOMMENDATIONS.md`; prototype docs | Medium | No | Yes |
+| Agent prompts | `10_agent_prompts/README.md` | Needed only if prompts remain part of canonical root structure. | `09_agent_prompts/`; `docs/10_agent_prompts/` | Low | No | No |
+| Agent prompts | Root prompt execution/checklist docs | Needed to prevent future agents from following nested-docs or build-oriented prompts by mistake. | Nested phase prompts; specialist prompts | Medium | No | No |
+| Release readiness | `08_operations_testing_accessibility/release_readiness_checklist.md` | Needed to list evidence gates and keep no-public-build/no-production status explicit. | Readiness reports; MVP acceptance checklist; blockers | Critical | Yes | Yes |
+| Release readiness | MVP evidence gate register | Needed before any public MVP/build approval can be considered. | Source DOCX; P0 reviews; readiness blockers | Critical | No | Yes |
+| Release readiness | Production readiness gate register | Needed before any production-readiness claim can be considered. | Production readiness review; security/privacy/testing docs | Critical | No | Yes |
 
-| Existing document | Incomplete areas |
-|---|---|
-| `02_product/product_brief.md` | Target audience evidence, validated needs, market claims, pricing assumptions, and public copy all remain incomplete or unvalidated. |
-| `02_product/product_requirements.md` | Core pillars are summarised, but detailed requirements, acceptance criteria, evidence gates, and scope priorities remain incomplete. |
-| `02_product/private_beta_scope.md` | Needs final participant cap approval, beta owner, environment definition, operational workflow, withdrawal process, and post-beta deletion/anonymisation procedure. |
-| `05_ai_memory_data/ai_memory_governance.md` | Needs provider-specific retention/training/deletion review, retrieval rules, embedding invalidation process, audit rules, and memory state model. |
-| `06_privacy_legal_safety/private_beta_consent_requirements.md` | Needs final consent notice text, jurisdiction-specific legal review, data processor disclosures, request response timelines, and support contact/process. |
-| `06_privacy_legal_safety/safety_boundaries.md` | Needs crisis resource governance, bad-day mode details, safety log retention rules, and support-circle consent/rules details. |
+## Highest-Risk Unresolved Gaps
 
-## Unresolved Decisions
-
-- Confirm or correct the source DOCX filename/path conflict: expected `docs/02_product/becomingos_product_specification.docx`; observed repository file `docs/02_product/becomings_product_specification.docx`.
-- Confirm whether `01-source-documents/originals/` remains permanently in place or may later move only after owner approval.
-- Confirm exact owner sign-off format for DEC-001 to DEC-030.
-- Confirm participant limit for private beta; 5-10 is suggested but not operationally approved.
-- Confirm private beta retention period; 90 days is suggested but not legally approved.
-- Confirm AI provider retention, training, logging, and deletion terms before any live user data.
-- Confirm whether any top-level implementation-adjacent files are historical evidence only or have a separate external app context.
-- Confirm final brand status and whether any LifeOS-styled brand material remains valid beyond internal alias use.
-
-## Missing Privacy/Legal/Safety Documents
-
-- Broader privacy, consent, and data governance policy.
-- Legal claims policy and public-copy review standard.
-- Crisis localization and signposting governance.
-- Security threat model for private beta environment.
-- Safety logging policy covering minimal segregated logs, retention, access, and exclusion from memory/analytics.
-- Support Circle consent and automatic-alert prohibition/rules document.
-- Data deletion, anonymisation, export/access, and withdrawal operating procedure.
-
-## Missing Research/Validation Documents
-
-- Evidence and assumption register.
-- Research summary separating completed evidence from planned research.
-- User research plan in canonical root structure.
-- Market validation document that marks pricing/demand claims as assumptions.
-- Private beta research protocol and participant-risk screen.
-- Validation round materials and success/failure criteria.
-
-## Missing Beta Consent Details
-
-- Final participant-facing beta consent notice.
-- Data category-by-category consent screens or wording.
-- Beta environment owner and isolation description.
-- AI provider and subprocessors disclosure.
-- Data retention schedule and deletion/anonymisation workflow.
-- Export/access request workflow.
-- Withdrawal workflow.
-- Support contact or request intake channel.
-- No production reuse language requiring renewed consent.
-- Legal review sign-off before broad release.
-
-## Missing MVP Evidence Gates
-
-No public MVP build is approved. Missing gates include:
-
-- Completed user research findings and owner acceptance.
-- Market and pricing validation evidence.
-- Approved non-clinical product and claims review.
-- Approved privacy/legal/safety review.
-- Approved AI memory governance and provider retention review.
-- Approved conceptual architecture and NFR stage classification.
-- Approved testing strategy and acceptance criteria.
-- Approved accessibility baseline and QA evidence.
-- Approved integration go/no-go decision.
-
-## Missing Production Readiness Gates
-
-Production readiness is not approved. Missing gates include:
-
-- Legal review and compliance posture approval.
-- Security threat model closure and security testing evidence.
-- Privacy/data governance implementation evidence.
-- Incident response and support process approval.
-- Monitoring/logging policy that excludes disallowed memory/analytics use.
-- Data deletion/export/access operational evidence.
-- AI provider data-processing approvals.
-- Accessibility verification evidence.
-- Reliability, backup, recovery, and operational runbooks.
-- Public claims, app-store, marketing, and support-copy review.
-
-## Highest-Risk Gaps
-
-- Source DOCX filename/path mismatch.
+- Source DOCX filename/path mismatch: expected `docs/02_product/becomingos_product_specification.docx`; observed repository evidence includes `docs/02_product/becomings_product_specification.docx`.
 - Missing evidence and assumption register.
-- Missing full privacy/legal/safety governance beyond beta consent requirements.
-- Missing AI provider retention/training/deletion approval before live data.
-- Missing detailed memory, retrieval, embedding, and deletion lifecycle documents.
-- Missing MVP and production readiness gates, with existing older files that could be misread as approvals.
+- Missing beta-ready privacy/legal/safety governance, including final consent notice and safety logging policy.
+- Missing AI provider approval and detailed memory/retrieval/embedding lifecycle.
+- Missing separate beta environment definition.
+- Missing release readiness checklist and explicit MVP/production gate registers.
+- Implementation-adjacent app/MVP audit files remain unresolved evidence and could be misread as approvals.
 

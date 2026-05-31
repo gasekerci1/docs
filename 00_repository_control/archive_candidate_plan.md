@@ -1,69 +1,62 @@
 # Archive Candidate Plan
 
-Current status: candidate plan only. Do not archive, move, delete, rename, or clean up any file until owner approval is granted after traceability is complete.
+Current status: cleanup-preparation plan only.
 
-This plan identifies eventual archive candidates and why they must be preserved for now.
+No archive action is approved. Do not archive, move, delete, rename, or clean up files until canonical documents and traceability are approved by the owner.
 
-## Archive Preconditions
+Product source of truth: `docs/02_product/becomingos_product_specification.docx`.
 
-Before any archive action:
+## Archive Blockers
 
-- Owner must approve the source traceability map.
-- Owner must approve canonical replacement documents.
-- Owner must approve conflict resolutions.
-- Owner must approve the exact archive list.
-- Source evidence must remain accessible.
-- No source file may be moved until the owner confirms the evidence baseline.
+Archive action is blocked until:
 
-## Exact Duplicate Candidates
+- Canonical root documents are complete enough to replace older source groups.
+- Source traceability is approved.
+- Conflict resolutions are approved.
+- The owner approves the exact archive list and destination.
+- The evidence baseline is approved and preserved.
 
-| Candidate group | Examples | Why eventually archive | Why not archive yet | Owner approval |
-|---|---|---|---|---|
-| Raw inbox copies duplicated in originals and categorized folders | `00_inbox/Wording and Tone Guide.docx`; `00_inbox/Today Directive Model.docx`; `00_inbox/Question system design.docx`; `00_inbox/AI Interpretation Guide.docx`; `00_inbox/BecomingOS Safety and Boundary Policies.docx` | Reduces duplicate evidence and prevents duplicate files from making the same claim appear stronger than it is. | `00_inbox/` preserves import provenance and must be mapped before cleanup. | Required before moving. |
-| Capitalized and snake_case duplicate files | `01_product/Prototype UX Specification.docx` and `01_product/prototype_ux_specification.docx`; `05_privacy_legal_safety/Security threat model.docx` and `05_privacy_legal_safety/security_threat_model.docx`; `10_operations_testing_accessibility/Testing Strategy for MVP.docx` and `10_operations_testing_accessibility/testing_strategy.docx` | Reduces confusion over authoritative filename. | Need source hash/provenance confirmation and canonical replacement first. | Required before moving. |
-| Duplicate decision and synthesis files | `04-decisions/Recommendation Decision Table.docx`; `07_analysis/Recommendation Decision Table.docx`; `03-synthesis/Accepted Recommendations.docx`; `07_analysis/Accepted Recommendations.docx` | Avoids split decision history. | Decision records must be captured in owner decision register and evidence register first. | Required before moving. |
-| Duplicate source-original/categorized documents | Copies repeated across `01-source-documents/originals/`, `01_product/`, `03_curriculum_and_questions/`, `04_ai_memory_and_data/`, `05_privacy_legal_safety/`, and `05-product-spec/` | Keeps one evidence baseline and one canonical destination per topic. | `01-source-documents/originals/` must remain preserved; categorized folders still provide topic context. | Required before moving. |
+## Candidate List
 
-## Near Duplicate Candidates
-
-| Candidate group | Examples | Why eventually archive | Why not archive yet | Owner approval |
-|---|---|---|---|---|
-| Hyphenated vs underscored research folders | `02-research/` and `02_research_and_validation/` | Consolidates duplicate research structures. | Research evidence and pending/unvalidated claims must be preserved. | Required before moving. |
-| Synthesis and analysis overlap | `03-synthesis/` and `07_analysis/` | Consolidates accepted recommendations, gaps, and decision evidence. | Accepted recommendations are not the same as validated evidence; preserve distinction. | Required before moving. |
-| Decision folder overlap | `04-decisions/` and `07_analysis/*decision*` | Consolidates owner decisions into root control records. | Decision requests, owner notes, and review records may contain unique context. | Required before moving. |
-| Mixed product spec overlap | `05-product-spec/` overlapping product, curriculum, AI memory, and safety folders | Removes a broad mixed folder after topic-specific canonical docs exist. | High risk of losing cross-topic source context before full traceability. | Required before moving. |
-| Agent prompt overlap | `09_agent_prompts/` and `docs/10_agent_prompts/` | Reduces split prompt systems. | Prompts document prior consolidation workflow and constraints. | Required before moving. |
-
-## Superseded Candidates
-
-| Candidate group | Examples | Why eventually archive | Why not archive yet | Owner approval |
-|---|---|---|---|---|
-| Product PRD/prototype drafts | `01_product/PRD v0.1 for BecomingOS.docx`; `01_product/Prototype UX Specification.docx` | Superseded after canonical product requirements, product brief, prototype scope, and traceability are complete. | They contain stage and feature evidence that must remain traceable. | Required before moving. |
-| Brand and wording drafts | `01_product/lifeos_brand_kit.md`; `01_product/brand_kit/`; wording/tone `.docx` files | Superseded after approved BecomingOS brand/tone docs exist. | Current brand conflict is high risk; do not archive before owner-approved brand hierarchy. | Required before moving. |
-| AI memory/data drafts | `04_ai_memory_and_data/*.docx` | Superseded after canonical AI governance, memory model, retrieval/embedding rules, and data model exist. | Provider retention, storage, deletion, and embedding details remain incomplete. | Required before moving. |
-| Privacy/legal/safety drafts | `05_privacy_legal_safety/*.docx` | Superseded after canonical safety, privacy, legal claims, security, and crisis docs exist. | Legal review and consent details are incomplete. | Required before moving. |
-| Architecture/API/NFR drafts | `06_architecture_and_api/*.docx` | Superseded after conceptual architecture/API/NFR docs are clearly marked planning-only. | Could be mistaken for implementation approval; keep as evidence until rewritten. | Required before moving. |
-| Operations/testing/accessibility drafts | `10_operations_testing_accessibility/*.docx` | Superseded after canonical testing, support, analytics, accessibility, and release-readiness docs exist. | Beta and production operating assumptions are not approved. | Required before moving. |
-| Top-level implementation-adjacent evidence | `MVP_ACCEPTANCE_CHECKLIST.md`; `database_mvp_schema_notes.md`; `mvp_build_audit.md`; `final_mvp_hardening_report.md`; `PROJECT_STRUCTURE.md` | Superseded or reclassified after app/MVP context is resolved. | Critical: may be historical evidence but must not imply current build approval. | Required before moving. |
-
-## Old Review/Evidence Candidates
-
-| Candidate group | Examples | Why eventually archive | Why not archive yet | Owner approval |
-|---|---|---|---|---|
-| P0 reviews | `07_analysis/p0_reviews/*.md` | Historical review evidence after canonical gaps and readiness gates are captured. | Reviews contain rationale and blockers. | Required before moving. |
-| Readiness reports | `08_final_outputs/*.docx`; `final_mvp_hardening_report.md`; `mvp_build_audit.md` | Historical readiness evidence after canonical readiness documents exist. | File names may mislead, but their evidence is important. | Required before moving. |
-| Repository audits | `REPOSITORY_AUDIT_2026-05-24.md`; nested control docs | Historical repository-control evidence after root control docs are approved. | Audit context supports traceability and cleanup decisions. | Required before moving. |
-| Agent orchestration plans | `CODEX_PRODUCT_EXPERIENCE_PROMPT_PLAN.md`; `09_agent_prompts/*.md`; `docs/10_agent_prompts/**/*.md` | Historical or superseded prompt evidence after prompt/control docs are final. | Prior prompts include constraints that should remain visible until cleanup is approved. | Required before moving. |
-
-## Nested Docs Candidates
-
-| Candidate group | Examples | Why eventually archive | Why not archive yet | Owner approval |
-|---|---|---|---|---|
-| Nested control plane | `docs/00_repository_control/file_inventory.md`; `docs/00_repository_control/duplicate_file_map.md`; `docs/00_repository_control/contradiction_register.md`; `docs/00_repository_control/archive_plan.md` | Root-level folders are now canonical; nested control docs can become historical evidence after root equivalents are complete. | They contain useful duplicate, contradiction, gap, and archive evidence. | Required before moving. |
-| Nested product source area | `docs/02_product/becomings_product_specification.docx`; expected `docs/02_product/becomingos_product_specification.docx` | The nested folder is not the canonical structure except for the source-of-truth DOCX path named by the owner. | The source-of-truth file/path conflict is unresolved. Do not move or rename. | Required before moving. |
-| Nested consolidation prompts | `docs/10_agent_prompts/20_document_consolidation_agent.md`; `docs/10_agent_prompts/document_consolidation/PHASE_*.md` | Superseded after root control docs and final process instructions are approved. | They document the consolidation workflow and prior assumptions. | Required before moving. |
-
-## Standing Rule
-
-Every candidate in this plan must remain in place until owner approval is explicit and traceability from source to canonical replacement is complete.
+| Category | Current path | Proposed future archive destination | Reason | Risk level | Owner approval required | Why it must not be archived yet |
+|---|---|---|---|---|---|---|
+| Exact duplicate | `00_inbox/*.docx` duplicated in `01-source-documents/originals/` and categorized folders | `99_archive/duplicates/00_inbox/` | Raw imports often duplicate preserved originals and categorized copies. | High | Yes | `00_inbox/` preserves import provenance; traceability and exact duplicate approval are not complete. |
+| Exact duplicate | `01_product/prototype_ux_specification.docx` | `99_archive/duplicates/01_product/` | Duplicate/normalized copy of prototype UX source. | Medium | Yes | Prototype evidence must remain available until prototype/private-beta boundaries are fully mapped. |
+| Exact duplicate | `01_product/prd_v0.1_for_becomingos.docx` | `99_archive/duplicates/01_product/` | Duplicate/normalized copy of PRD source. | High | Yes | PRD contains product-scope evidence and conflicts that must remain traceable. |
+| Exact duplicate | `05_privacy_legal_safety/security_threat_model.docx` | `99_archive/duplicates/05_privacy_legal_safety/` | Duplicate/normalized copy of security threat model. | High | Yes | Security evidence is needed before beta governance and legal/safety review are complete. |
+| Exact duplicate | `10_operations_testing_accessibility/testing_strategy.docx` | `99_archive/duplicates/10_operations_testing_accessibility/` | Duplicate/normalized copy of testing strategy. | High | Yes | Testing strategy includes future-stage assumptions that must be reconciled first. |
+| Near duplicate | `02-research/` | `99_archive/duplicates/02-research/` | Overlaps `02_research_and_validation/` and source originals. | High | Yes | Research evidence and pending status must be mapped into canonical research docs first. |
+| Near duplicate | `03-synthesis/` | `99_archive/duplicates/03-synthesis/` | Overlaps accepted recommendation and gap/review evidence elsewhere. | Medium | Yes | Accepted recommendations must be separated from validated evidence first. |
+| Near duplicate | `04-decisions/` | `99_archive/duplicates/04-decisions/` | Overlaps `07_analysis/*decision*` and source originals. | High | Yes | Decision provenance must be captured in owner decision records first. |
+| Near duplicate | `05-product-spec/` | `99_archive/duplicates/05-product-spec/` | Mixed duplicate folder spanning product, AI, curriculum, wording, and safety. | Critical | Yes | Broad folder may contain cross-topic traceability; canonical topic docs are incomplete. |
+| Near duplicate | `09_agent_prompts/` | `99_archive/superseded/09_agent_prompts/` | Overlaps nested prompt/consolidation structure. | Medium | Yes | Prompt history may preserve constraints and audit context. |
+| Superseded later | `01_product/PRD v0.1 for BecomingOS.docx` | `99_archive/superseded/01_product/` | Older product requirements evidence after canonical product docs are complete. | High | Yes | Still needed to trace product requirements and conflicts. |
+| Superseded later | `01_product/Prototype UX Specification.docx` | `99_archive/superseded/01_product/` | Older prototype evidence after canonical prototype scope exists. | High | Yes | Prototype/private-beta distinction is not fully documented. |
+| Superseded later | `01_product/lifeos_brand_kit.md` | `99_archive/superseded/01_product/brand/` | Draft brand doc conflicts with BecomingOS external name. | High | Yes | Brand hierarchy and tone docs are incomplete. |
+| Superseded later | `01_product/brand_kit/` | `99_archive/superseded/01_product/brand_kit/` | Draft brand folder after canonical brand/experience docs exist. | High | Yes | Contains brand evidence and naming conflicts. |
+| Superseded later | `04_ai_memory_and_data/*.docx` | `99_archive/superseded/04_ai_memory_and_data/` | AI/memory/data evidence after canonical AI memory/data docs exist. | Critical | Yes | Provider retention, embeddings, deletion, storage, and retrieval details are incomplete. |
+| Superseded later | `05_privacy_legal_safety/*.docx` | `99_archive/superseded/05_privacy_legal_safety/` | Privacy/legal/safety evidence after canonical policy docs exist. | Critical | Yes | Legal review, beta consent details, security, crisis, and safety logging are incomplete. |
+| Superseded later | `06_architecture_and_api/*.docx` | `99_archive/superseded/06_architecture_and_api/` | Conceptual architecture/API/NFR evidence after canonical planning-only docs exist. | High | Yes | Could be mistaken for implementation approval; root architecture docs do not exist yet. |
+| Superseded later | `10_operations_testing_accessibility/*.docx` | `99_archive/superseded/10_operations_testing_accessibility/` | Operations/testing/accessibility evidence after canonical ops/testing docs exist. | High | Yes | Beta/public/production readiness gates are not complete. |
+| Old review/evidence | `07_analysis/p0_reviews/*.md` | `99_archive/old_reviews/07_analysis/p0_reviews/` | Historical specialist review evidence after gaps and decisions are captured. | High | Yes | Reviews contain blocker rationale and cannot be hidden before gate docs exist. |
+| Old review/evidence | `07_analysis/*decision_request*.md` | `99_archive/old_reviews/07_analysis/decision_requests/` | Superseded by approved owner decision records later. | High | Yes | Decision requests may explain unresolved choices. |
+| Old review/evidence | `07_analysis/*decision_record*.md` | `99_archive/old_reviews/07_analysis/decision_records/` | Superseded only after decisions are captured in canonical root records. | High | Yes | Decision provenance must remain traceable. |
+| Old review/evidence | `07_analysis/remaining_readiness_blockers.md` | `99_archive/old_reviews/07_analysis/` | Historical blocker list after release readiness docs exist. | Critical | Yes | Current no-build/no-production posture depends on blocker evidence. |
+| Old review/evidence | `08_final_outputs/*.docx` | `99_archive/old_reviews/08_final_outputs/` | Final-named readiness evidence after root readiness docs exist. | Critical | Yes | Names can mislead, but content may prove readiness is not approved. |
+| Nested docs candidate | `docs/00_repository_control/file_inventory.md` | `99_archive/old_reviews/docs/00_repository_control/` | Earlier inventory evidence after root control docs are complete. | Medium | Yes | Used as evidence for traceability and cleanup planning. |
+| Nested docs candidate | `docs/00_repository_control/duplicate_file_map.md` | `99_archive/old_reviews/docs/00_repository_control/` | Earlier duplicate evidence after archive list is approved. | High | Yes | Needed to justify exact and near duplicate candidates. |
+| Nested docs candidate | `docs/00_repository_control/contradiction_register.md` | `99_archive/old_reviews/docs/00_repository_control/` | Earlier contradiction evidence after conflict resolutions are captured. | High | Yes | Needed to trace conflicts to source DOCX decisions. |
+| Nested docs candidate | `docs/00_repository_control/gap_register.md` | `99_archive/old_reviews/docs/00_repository_control/` | Earlier gap evidence after root gap check is complete. | High | Yes | Needed to confirm gaps were not silently removed. |
+| Nested docs candidate | `docs/00_repository_control/canonical_document_map.md` | `99_archive/old_reviews/docs/00_repository_control/` | Earlier nested-structure map after root reconciliation is approved. | Medium | Yes | Shows prior nested-docs proposal and source mapping. |
+| Nested docs candidate | `docs/00_repository_control/archive_plan.md` | `99_archive/old_reviews/docs/00_repository_control/` | Earlier archive plan after root archive plan is approved. | High | Yes | Contains archive rationale and risks. |
+| Nested docs candidate | `docs/00_repository_control/approval_packet.md` | `99_archive/old_reviews/docs/00_repository_control/` | Earlier approval packet after owner decisions are captured. | High | Yes | Contains DEC context and prior owner review framing. |
+| Nested docs candidate | `docs/00_repository_control/proposed_final_document_set.md` | `99_archive/old_reviews/docs/00_repository_control/` | Earlier proposed nested structure after root-vs-nested decision is captured. | Medium | Yes | Needed to explain structure conflict. |
+| Nested docs candidate | `docs/10_agent_prompts/` | `99_archive/superseded/docs/10_agent_prompts/` | Earlier consolidation prompts after root prompt/control docs exist. | Medium | Yes | Prompt workflow remains evidence of how audit files were produced. |
+| App/MVP audit candidate | `PROJECT_STRUCTURE.md` | `99_archive/old_reviews/top_level/` | Conflicts with docs-only repository if read as active app structure. | Critical | Yes | Must remain evidence until app/MVP references are classified. |
+| App/MVP audit candidate | `MVP_ACCEPTANCE_CHECKLIST.md` | `99_archive/old_reviews/top_level/` | Could be misread as MVP readiness approval. | Critical | Yes | Missing MVP evidence gates remain unresolved. |
+| App/MVP audit candidate | `database_mvp_schema_notes.md` | `99_archive/old_reviews/top_level/` | Database notes are implementation-adjacent evidence only. | Critical | Yes | Do not remove until database/app references are traced and disclaimed. |
+| App/MVP audit candidate | `mvp_build_audit.md` | `99_archive/old_reviews/top_level/` | Build audit evidence could imply a build exists or is approved. | Critical | Yes | Must be preserved as evidence, not approval. |
+| App/MVP audit candidate | `final_mvp_hardening_report.md` | `99_archive/old_reviews/top_level/` | Hardening report could be misread as production readiness. | Critical | Yes | Production readiness is not approved; report must remain traceable. |
+| App/MVP audit candidate | `PRODUCT_EXPERIENCE_RECOMMENDATIONS.md` | `99_archive/superseded/top_level/` | Product experience guidance may contain app/MVP assumptions. | High | Yes | Product scope and brand docs are incomplete. |
+| App/MVP audit candidate | `CODEX_PRODUCT_EXPERIENCE_PROMPT_PLAN.md` | `99_archive/superseded/top_level/` | Prompt plan may include implementation-adjacent guidance. | Medium | Yes | Prompt constraints and source context must remain visible. |
 
