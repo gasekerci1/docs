@@ -1,34 +1,45 @@
-# BecomingOS Documentation Index
+# BecomingOS Documentation Source Of Truth
 
-BecomingOS / lifeOS is currently in documentation, prototype, and readiness-planning mode. This repository should not be treated as production-ready, and implementation should wait until P0 readiness blockers are closed with evidence.
+This is the BecomingOS documentation source-of-truth repository.
 
-## Folder Structure
+The current product source of truth is [docs/02_product/becomingos_product_specification.docx](docs/02_product/becomingos_product_specification.docx). See [00_repository_control/source_of_truth_register.md](00_repository_control/source_of_truth_register.md) for the source hierarchy, conflict rule, and current product decisions.
 
-- `00_inbox/` contains original source documents copied into the repository for preservation.
-- `01_product/` contains product requirements, prototype UX, and product-scope documents.
-- `02_research_and_validation/` contains user research and market validation work.
-- `03_curriculum_and_questions/` contains curriculum, lesson, and question-bank work.
-- `04_ai_memory_and_data/` contains AI evaluation, memory, and canonical data model work.
-- `05_privacy_legal_safety/` contains privacy, legal claims, security, and crisis/safety work.
-- `06_architecture_and_api/` contains NFRs, conceptual API contracts, and architecture planning.
-- `07_analysis/` contains analysis, gap, decision, contradiction, and work-plan files.
-- `08_final_outputs/` contains final synthesis and readiness-review outputs.
-- `09_agent_prompts/` contains copy-paste prompts for specialist readiness agents.
-- `10_operations_testing_accessibility/` contains support, analytics, testing, and accessibility work.
+Note: the repository currently contains `docs/02_product/becomings_product_specification.docx`, which appears to conflict with the expected filename above. Do not rename, move, delete, or archive source files without owner approval.
 
-## Agent Prompts
+## Current Stage
 
-The specialist prompt pack lives in `docs/09_agent_prompts/`.
+BecomingOS is pre-MVP with limited private beta planning only.
 
-Start with:
+A limited private beta may be planned only with documented safeguards: trusted participants, explicit consent, a separate beta environment, minimal logging, defined retention, deletion or anonymisation after beta, and no production reuse without renewed consent.
 
-- `docs/09_agent_prompts/README.md`
-- `docs/09_agent_prompts/AGENT_EXECUTION_ORDER.md`
-- `docs/09_agent_prompts/AGENT_OUTPUT_INDEX.md`
-- `docs/09_agent_prompts/AGENT_READINESS_CHECKLIST.md`
+No public build, public MVP, commercial launch, or production readiness is approved.
 
-## Current Readiness Boundary
+## Canonical Root Folder Structure
 
-The repository is documentation-first. It currently does not contain production frontend, backend, database, authentication, API implementation, CI/CD, tests, logging, monitoring, or deployment.
+Use the repository root as the canonical documentation tree.
 
-Do not start production implementation until the Integration Agent confirms P0 blockers are closed with evidence.
+- `00_repository_control/` contains source-of-truth, owner decision, rewrite, traceability, and control documents.
+- `01-source-documents/` preserves source originals and evidence baselines.
+- `01_product/` contains older product evidence and draft materials unless superseded by root canonical documents.
+- `02_product/` contains canonical product documents.
+- `02_research_and_validation/` contains research and validation evidence.
+- `03_curriculum_and_questions/` contains curriculum, lesson, and question-bank evidence.
+- `04_ai_memory_and_data/` contains older AI memory and data evidence.
+- `05_ai_memory_data/` contains canonical AI and memory governance documents.
+- `05_privacy_legal_safety/` contains older privacy, legal, and safety evidence.
+- `06_privacy_legal_safety/` contains canonical privacy, legal, and safety documents.
+- `06_architecture_and_api/` contains conceptual architecture and API evidence only.
+- `07_analysis/` contains analysis, contradiction, gap, and readiness evidence.
+- `08_final_outputs/` contains readiness evidence, not approvals.
+- `09_agent_prompts/` contains agent prompt evidence and support material.
+- `10_operations_testing_accessibility/` contains support, analytics, testing, and accessibility evidence.
+
+## Nested Docs Warning
+
+Do not use nested `docs/docs` duplication as the source of truth.
+
+Nested `docs/` content may be supporting evidence, but the repository root is the canonical documentation structure unless the owner explicitly changes that decision.
+
+## Repository Boundary
+
+This is a documentation-only repository. Do not write app code, create implementation code, approve public MVP build, approve production readiness, delete source files, archive files, move files, or silently remove information.
