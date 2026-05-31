@@ -1,0 +1,28 @@
+# Private Beta Approval Decision Log
+
+Current status: decision log only. Default status for all entries: pending / not approved.
+
+This log does not approve private beta, public MVP build, production readiness, implementation work, commercial launch, or legal/privacy/security/regulatory compliance claims.
+
+## Decision Log
+
+| Decision ID | Decision area | Source document | Approval owner | Required evidence | Current status | Decision | Date | Notes |
+|---|---|---|---|---|---|---|---|---|
+| PB-DEC-001 | Consent notice | `06_privacy_legal_safety/private_beta_final_consent_notice.md` | Privacy/legal owner; safety owner | Final participant-facing consent notice approved for beta use, including data categories, optionality, AI provider disclosure, retention, deletion, withdrawal, no production reuse, and non-clinical boundaries. | Pending / not approved | Pending |  | Draft exists; approval required before real data collection. |
+| PB-DEC-002 | Retention/deletion workflow | `06_privacy_legal_safety/private_beta_data_deletion_workflow.md` | Privacy/legal/security owner | Approved deletion/anonymisation workflow covering source data, documents/photos/audio/video, support contacts, logs, provider-held data, and embeddings. | Pending / not approved | Pending |  | Draft exists; workflow not approved. |
+| PB-DEC-003 | Withdrawal/export/access workflow | `06_privacy_legal_safety/private_beta_withdrawal_export_access_workflow.md` | Privacy/legal/security owner | Approved intake, response target, access/export/correction/deletion/withdrawal process, identity verification concept, and escalation path. | Pending / not approved | Pending |  | Draft exists; no live process approved. |
+| PB-DEC-004 | Support Circle rules | `06_privacy_legal_safety/private_beta_support_circle_rules.md` | Product owner; safety owner; privacy/legal owner | Approved Support Circle inclusion/exclusion decision, opt-in rules, support contact consent, sharing limits, expiry/revocation, and no emergency monitoring boundary. | Pending / not approved | Pending |  | Draft exists; Support Circle beta use remains unresolved. |
+| PB-DEC-005 | Safety logging policy | `06_privacy_legal_safety/private_beta_safety_log_approval_record.md` | Safety owner; privacy/legal owner; security owner | Approved safety log purpose, permitted fields, prohibited fields, retention limit, access roles, exclusions from memory and analytics, and review owner. | Pending / not approved | Pending |  | Default safety logging status is not approved. |
+| PB-DEC-006 | AI provider approval | `06_privacy_legal_safety/ai_provider_approval_record.md` | AI/data owner; privacy/legal owner; security owner; product owner | Completed provider review covering retention, logging, training use, deletion, subprocessors, cross-border transfer, security, incident response, contract/DPA, embeddings, and sensitive data. | Pending / not approved | Pending |  | No live beta user data may be sent to any AI provider before approval. |
+| PB-DEC-007 | Beta environment approval | `07_architecture_api/private_beta_environment_approval_record.md` | Security owner; product owner | Approved separate beta environment description, access control, data storage location, logging approach, secrets handling concept, backup/restore assumptions, deletion linkage, and manual shutdown plan. | Pending / not approved | Pending |  | Conceptual approval record exists; not signed. |
+| PB-DEC-008 | Testing script | `08_operations_testing_accessibility/private_beta_test_script.md` | Research/testing owner; product owner; safety owner | Approved test script covering consent confirmation, onboarding, memory confirmation, Today Directive, Bad Day Mode, Life Capture, Support Circle, privacy comfort, safety boundary comprehension, and debrief. | Pending / not approved | Pending |  | Draft exists; not approved for live beta. |
+| PB-DEC-009 | Stop criteria | `08_operations_testing_accessibility/private_beta_stop_criteria.md` | Research/testing owner; safety owner; privacy/legal owner; security owner | Approved stop/pause conditions, severity levels, responsible owners, response rules, and minimal response record. | Pending / not approved | Pending |  | Draft exists; not signed. |
+| PB-DEC-010 | Analytics event taxonomy | `08_operations_testing_accessibility/analytics_event_taxonomy.md` | Product owner; privacy/legal owner; safety owner | Approved privacy-safe events, allowed/prohibited properties, retention/deletion handling, exclusion of crisis text and sensitive free text, and consent coverage. | Pending / not approved | Pending |  | Taxonomy is conceptual and not approved for live analytics. |
+| PB-DEC-011 | Security threat model | `06_privacy_legal_safety/security_threat_model.md` | Security owner | Security review confirming beta risks, controls, open security decisions, separate environment requirements, access control, minimal logging, provider exposure, and deletion/anonymisation handling. | Pending / not approved | Pending |  | Threat model exists; security review remains incomplete. |
+| PB-DEC-012 | Final owner go/no-go | `00_repository_control/private_beta_final_owner_go_no_go.md` | Final project owner | Signed final GO after all required approvals and evidence are complete, or signed NO-GO/Modify with conditions. | Pending / not approved | Pending |  | Default final decision remains NO-GO. |
+
+## Status Rule
+
+An entry may be marked approved only when a signed approval record or completed evidence exists in the repository. Draft documents, planning documents, checklists, and unsigned templates do not count as approval.
+
+No decision in this log approves public MVP/build, production readiness, commercial release, or compliance claims.
