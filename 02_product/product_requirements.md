@@ -60,6 +60,64 @@ All technical details are conceptual only.
 
 Architecture, API, NFR, AI provider, database, vector storage, auth, deployment, logging, analytics, and integration documents are planning evidence only. They do not approve implementation.
 
+## Evidence-Based Growth Loop
+
+These requirements are planning/private-beta requirements only. They do not approve public MVP build, production readiness, implementation, clinical claims, medical claims, legal claims, or regulatory compliance claims.
+
+Research source: `03_research_validation/evidence_based_growth_systems_report.md`.
+
+The product should plan around this evidence-informed loop:
+
+```text
+diagnosis flow -> Today Directive -> if-then plan -> completion tracking -> failure diagnosis -> adaptive reset
+```
+
+### Diagnosis Flow
+
+The system should help users identify non-clinical barriers using COM-B as a behavioural lens: capability, opportunity, and motivation.
+
+This must not be described as clinical diagnosis, mental-health screening, treatment, or professional assessment.
+
+### Today Directive
+
+The system should generate or draft one feasible next action for user review, with a rationale tied to user-confirmed context where applicable.
+
+The Today Directive should remain editable, rejectable, and non-prescriptive.
+
+### If-Then Plan Builder
+
+The system should help users turn a chosen action into an implementation intention:
+
+```text
+If [cue/context], then I will [specific action].
+```
+
+Plans should include a cue, action, and optional fallback or reduced version.
+
+### Habit Tracker With Cue Logging
+
+The system should support self-monitoring by tracking completion, reduced-version completion, cue match, and difficulty bands.
+
+Tracking must avoid punitive streak pressure and must not collect sensitive free text unless separately justified and consented.
+
+### Failure Diagnosis
+
+The system should help users review missed or difficult actions without shame. Failure diagnosis should identify practical barriers and lead to plan adjustment.
+
+Failure diagnosis must not label the user, diagnose a condition, or infer clinical causes.
+
+### Bad Day Mode
+
+The system should offer a reduced plan when the full action is unrealistic. Bad Day Mode should protect competence and continuity by scaling down rather than treating the day as a failure.
+
+Bad Day Mode is low-intensity planning support only, not therapy or crisis support.
+
+### Optional Support Circle Permissions
+
+The system may support optional, permissioned accountability. Users must choose who sees what, for how long, and why.
+
+Support Circle must not automatically alert contacts unless prior user consent and rules exist. It is not emergency monitoring or crisis response.
+
 ## Private Beta Requirements
 
 Private beta requirements are separate from conceptual product requirements:
@@ -73,4 +131,3 @@ Private beta requirements are separate from conceptual product requirements:
 - Edit, deletion, access/export, and withdrawal processes required.
 - Beta data must be deleted or anonymised after beta.
 - No production reuse of beta data without renewed consent.
-

@@ -46,6 +46,19 @@ This register separates evidence, assumptions, owner-approved decisions, unsuppo
 | App/MVP audit files prove current build approval. | Top-level app/MVP audit files | Unsupported/conflicting | Unsupported | Owner classify as historical, external, or in-scope evidence. | No. |
 | BecomingOS is production-ready. | Readiness reports and owner decisions say no | Rejected | Owner decision / source evidence | None unless future production gates close. | No. |
 | BecomingOS is a public MVP. | Owner decisions say no public build | Rejected | Owner decision | None unless public build gates close. | No. |
+| COM-B is useful for identifying capability, opportunity, and motivation barriers. | `evidence_based_growth_systems_report.md` | Research-supported | Strong evidence | Validate user comprehension in BecomingOS diagnosis flow. | Only as non-clinical educational wording. |
+| COM-B outputs are clinical diagnoses. | Source-of-truth safety boundary; growth systems report | Rejected | Owner decision / safety boundary | None; keep prohibited. | No. |
+| Self-Determination Theory supports designing for choice, autonomous motivation, competence, and relatedness. | `evidence_based_growth_systems_report.md` | Research-supported | Moderate evidence | Validate whether users experience BecomingOS flows as autonomy-supportive. | Only general educational phrasing, not outcome claims. |
+| Implementation intentions improve action planning. | `evidence_based_growth_systems_report.md` | Research-supported | Strong evidence | Test if BecomingOS users can create and use if-then plans. | Limited educational wording allowed. |
+| WOOP / MCII can support obstacle-aware planning. | `evidence_based_growth_systems_report.md` | Research-supported | Moderate evidence | Test interactive WOOP flow with BecomingOS users. | Limited educational wording allowed. |
+| Habit automaticity is supported by repetition in stable contexts over variable timeframes. | `evidence_based_growth_systems_report.md` | Research-supported | Moderate evidence | Validate habit tracking and cue logging in beta. | Avoid time-to-habit promises. |
+| Self-monitoring is a high-confidence behaviour-change mechanism. | `evidence_based_growth_systems_report.md` | Research-supported | Strong evidence | Test completion tracking, cue logging, and review comprehension. | Limited educational wording allowed. |
+| Feedback and prompts/cues can support digital engagement and behaviour change. | `evidence_based_growth_systems_report.md` | Research-supported | Moderate evidence | Test whether prompts feel supportive rather than pressuring. | Limited educational wording allowed. |
+| Supportive accountability can help when opt-in, trusted, and process-focused. | `evidence_based_growth_systems_report.md` | Research-supported | Moderate evidence | Validate Support Circle permissions, comprehension, and safety. | Only with optional/permissioned caveats. |
+| Bad Day Mode is an evidence-proven named intervention. | `evidence_based_growth_systems_report.md` | Implementation inference | Weak evidence as named product pattern | Validate whether reduced plans reduce shame and support continuity. | No broad claim. |
+| Today Directive as a one-action daily surface is proven for BecomingOS users. | `evidence_based_growth_systems_report.md` | Implementation inference | Implementation inference | Validate with BecomingOS users in private beta/research. | No. |
+| The growth loop will improve user outcomes. | `evidence_based_growth_systems_report.md` | Assumption until user validation | Implementation inference | Conduct BecomingOS user research and beta evaluation. | No. |
+| Analytics events such as `goal_created`, `if_then_saved`, and `bad_day_mode_used` are useful mechanism indicators. | `evidence_based_growth_systems_report.md`; `analytics_event_taxonomy.md` | Planning assumption | Implementation inference | Validate privacy-safe event collection and usefulness in beta. | No public-facing copy needed. |
 
 ## Validation Gaps To Track
 
@@ -58,4 +71,4 @@ This register separates evidence, assumptions, owner-approved decisions, unsuppo
 - Question safety and non-clinical comprehension.
 - Privacy comfort with data categories, AI provider disclosure, and deletion/withdrawal.
 - Accessibility evidence for any built beta flows.
-
+- BecomingOS-specific validation of diagnosis flow, Today Directive, if-then planning, habit tracking, failure diagnosis, Bad Day Mode, and support permissions.
