@@ -1,45 +1,54 @@
-# BecomingOS Documentation Source Of Truth
+# BecomingOS Documentation Repository
 
-This is the BecomingOS documentation source-of-truth repository.
+This is a documentation-only repository for BecomingOS.
 
-The current product source of truth is [docs/02_product/becomingos_product_specification.docx](docs/02_product/becomingos_product_specification.docx). See [00_repository_control/source_of_truth_register.md](00_repository_control/source_of_truth_register.md) for the source hierarchy, conflict rule, and current product decisions.
+## Start Here
 
-Note: the repository currently contains `docs/02_product/becomings_product_specification.docx`, which appears to conflict with the expected filename above. Do not rename, move, delete, or archive source files without owner approval.
+- Current status: [00_repository_control/current_status_dashboard.md](00_repository_control/current_status_dashboard.md)
+- Governance index: [00_repository_control/master_governance_index.md](00_repository_control/master_governance_index.md)
+- Next actions: [00_repository_control/next_actions_register.md](00_repository_control/next_actions_register.md)
+- Source-of-truth register: [00_repository_control/source_of_truth_register.md](00_repository_control/source_of_truth_register.md)
+- Product source of truth: [docs/02_product/becomingos_product_specification.docx](docs/02_product/becomingos_product_specification.docx)
 
-## Current Stage
+## Current Status
 
-BecomingOS is pre-MVP with limited private beta planning only.
+- Documentation planning: active.
+- Private beta: NO-GO.
+- Public MVP/build: NO-GO.
+- Production: NO-GO.
+- Public launch: NO-GO.
+- Archive/delete/move: NO-GO.
 
-A limited private beta may be planned only with documented safeguards: trusted participants, explicit consent, a separate beta environment, minimal logging, defined retention, deletion or anonymisation after beta, and no production reuse without renewed consent.
+No app code, implementation files, public MVP build, production readiness, public launch, or compliance claims are approved.
 
-No public build, public MVP, commercial launch, or production readiness is approved.
+## Source Warning
 
-## Canonical Root Folder Structure
+The named product source of truth is `docs/02_product/becomingos_product_specification.docx`.
 
-Use the repository root as the canonical documentation tree.
+The repository also notes a filename/path mismatch involving `docs/02_product/becomings_product_specification.docx`. Do not rename, move, delete, archive, or silently resolve source files without owner approval.
 
-- `00_repository_control/` contains source-of-truth, owner decision, rewrite, traceability, and control documents.
-- `01-source-documents/` preserves source originals and evidence baselines.
-- `01_product/` contains older product evidence and draft materials unless superseded by root canonical documents.
-- `02_product/` contains canonical product documents.
-- `02_research_and_validation/` contains research and validation evidence.
-- `03_curriculum_and_questions/` contains curriculum, lesson, and question-bank evidence.
-- `04_ai_memory_and_data/` contains older AI memory and data evidence.
-- `05_ai_memory_data/` contains canonical AI and memory governance documents.
-- `05_privacy_legal_safety/` contains older privacy, legal, and safety evidence.
-- `06_privacy_legal_safety/` contains canonical privacy, legal, and safety documents.
-- `06_architecture_and_api/` contains conceptual architecture and API evidence only.
-- `07_analysis/` contains analysis, contradiction, gap, and readiness evidence.
-- `08_final_outputs/` contains readiness evidence, not approvals.
-- `09_agent_prompts/` contains agent prompt evidence and support material.
-- `10_operations_testing_accessibility/` contains support, analytics, testing, and accessibility evidence.
+## Canonical Structure
 
-## Nested Docs Warning
+Use root-level folders as the canonical documentation structure.
 
-Do not use nested `docs/docs` duplication as the source of truth.
+- `00_repository_control/`: source of truth, decisions, traceability, gates, dashboards.
+- `02_product/`: canonical product docs.
+- `03_research_validation/`: evidence, assumptions, and research summaries.
+- `04_curriculum_question_system/`: curriculum and behaviour-change planning.
+- `05_ai_memory_data/`: AI, memory, retrieval, embedding, and AI safety governance.
+- `06_privacy_legal_safety/`: privacy, legal, safety, consent, security, and claims controls.
+- `07_architecture_api/`: conceptual architecture and NFR planning.
+- `08_operations_testing_accessibility/`: readiness, testing, analytics, support, incident, and accessibility planning.
 
-Nested `docs/` content may be supporting evidence, but the repository root is the canonical documentation structure unless the owner explicitly changes that decision.
+Older root folders, source originals, nested `docs/` folders, app/MVP/readiness files, and draft marketing/launch files are evidence only unless later promoted by owner approval.
 
-## Repository Boundary
+## Repository Rules
 
-This is a documentation-only repository. Do not write app code, create implementation code, approve public MVP build, approve production readiness, delete source files, archive files, move files, or silently remove information.
+- Do not write app code.
+- Do not create implementation/config files.
+- Do not approve private beta.
+- Do not approve public MVP/build.
+- Do not approve production readiness.
+- Do not approve public launch.
+- Do not claim legal, privacy, medical, security, regulatory, accessibility, or AI safety compliance.
+- Do not delete, move, archive, or silently remove evidence.
