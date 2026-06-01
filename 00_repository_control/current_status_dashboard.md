@@ -8,7 +8,7 @@ Current status: repository dashboard only. This document does not approve privat
 |---|---|
 | Product name | BecomingOS |
 | Internal repository alias | lifeOS |
-| Product source of truth | `docs/02_product/becomingos_product_specification.docx` |
+| Product source of truth | `02_product/becomingos_product_specification.docx` |
 | Current stage | Documentation planning active; pre-MVP with limited private beta planning only |
 | Documentation planning | Active |
 | Private beta | NO-GO |
@@ -19,9 +19,8 @@ Current status: repository dashboard only. This document does not approve privat
 
 ## Source-Of-Truth Status
 
-- `docs/02_product/becomingos_product_specification.docx` is the named highest-priority product source of truth.
-- Repository evidence currently notes a filename/path mismatch: `docs/02_product/becomings_product_specification.docx` appears to exist where the expected source name is `docs/02_product/becomingos_product_specification.docx`.
-- Do not rename, move, delete, archive, or silently resolve this mismatch without owner approval.
+- `02_product/becomingos_product_specification.docx` is the named highest-priority product source of truth.
+- Control documents have been updated to reflect that the source file resides at this path. The previous nested path and misspelled filename are no longer referenced. Do not rename, move, delete, archive, or silently resolve the file without owner approval.
 - Older documents and nested `docs/` folders are supporting evidence unless they conflict with the source-of-truth file.
 
 ## Owner Decision Status
@@ -34,7 +33,7 @@ Current status: repository dashboard only. This document does not approve privat
 
 | Blocker | Blocks private beta? | Blocks public MVP/build? | Blocks production? |
 |---|---|---|---|
-| Source DOCX filename/path mismatch unresolved. | Yes | Yes | Yes |
+| Source DOCX filename/path alignment awaiting owner decision confirmation. | Yes | Yes | Yes |
 | Final beta consent notice not approved. | Yes | Yes | Yes |
 | AI provider due diligence not completed. | Yes | Yes | Yes |
 | Retention/deletion/export/withdrawal workflows not approved and not tested. | Yes | Yes | Yes |
@@ -51,7 +50,7 @@ Current status: repository dashboard only. This document does not approve privat
 
 | Evidence area | Current status |
 |---|---|
-| Product source of truth | Named, with filename/path mismatch unresolved |
+| Product source of truth | Named; path updated to root-level `02_product/` |
 | Owner decisions | Recorded for DEC-001 to DEC-030 |
 | Private beta evidence | Planning docs exist; required signed approvals missing |
 | Public MVP/build evidence | Missing or incomplete |
@@ -76,7 +75,7 @@ Reason: source evidence must be preserved until canonical replacements, traceabi
 
 | Stage | Current status | Required next approval |
 |---|---|---|
-| Documentation planning | Active | Owner confirmation of source evidence baseline and source DOCX mismatch resolution |
+| Documentation planning | Active | Owner confirmation of source evidence baseline and source DOCX path alignment |
 | Private beta | NO-GO | Product, privacy/legal, safety, AI/data, security, research/testing, and final owner approvals |
 | Public MVP/build | NO-GO | Public MVP evidence gates and final owner approval |
 | Production | NO-GO | Production evidence gates and final owner approval |

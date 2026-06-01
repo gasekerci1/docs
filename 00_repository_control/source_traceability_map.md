@@ -4,7 +4,7 @@ Current status: traceability and cleanup-preparation record only.
 
 This map does not approve archiving, deletion, moving, renaming, public MVP build, production readiness, implementation work, or product-scope changes.
 
-Product source of truth: `docs/02_product/becomingos_product_specification.docx`.
+Product source of truth: `02_product/becomingos_product_specification.docx`.
 
 Root-level folders are the canonical documentation structure. Nested `docs/` files are evidence/control outputs unless later promoted by owner approval. Older documents remain supporting evidence unless they conflict with the source-of-truth DOCX.
 
@@ -14,7 +14,7 @@ Evidence used: `docs/00_repository_control/file_inventory.md`, `docs/00_reposito
 
 | Source folder/file group | Current role | Canonical root destination | Status | Source-of-truth DOCX override? | Notes on conflicts |
 |---|---|---|---|---|---|
-| `docs/02_product/becomingos_product_specification.docx` | Product source of truth named by owner | `00_repository_control/source_of_truth_register.md`; `02_product/*`; related root canonical docs | Retained evidence | N/A: this is the product override source | Repository currently shows `docs/02_product/becomings_product_specification.docx`; filename/path mismatch remains unresolved and must not be fixed by move/rename without owner approval. |
+| `02_product/becomingos_product_specification.docx` | Product source of truth named by owner | `00_repository_control/source_of_truth_register.md`; `02_product/*`; related root canonical docs | Retained evidence | N/A: this is the product override source | The file exists at this path. The previous nested `docs/02_product` path and the typographical variant `becomings_product_specification.docx` are no longer referenced in control documents. Do not rename or move the file without owner approval. |
 | `00_inbox/` | Raw import and duplicate source evidence | Topic-specific root canonical docs; `00_repository_control/source_traceability_map.md` | Duplicate / retained evidence | Yes | Many files duplicate originals or categorized copies. Preserve import provenance until canonical docs and traceability are approved. |
 | `01-source-documents/originals/` | Preserved source-original evidence baseline | All root canonical docs as cited evidence | Retained evidence | Yes | Do not move or archive. Owner has approved preservation as evidence baseline. |
 | `01_product/` | Older product, PRD, prototype, brand, wording evidence | `02_product/product_brief.md`; `02_product/product_requirements.md`; `02_product/terminology_and_naming.md`; `02_product/private_beta_scope.md`; future `09_brand_experience/*` | Superseded later / retained evidence | Yes | Conflicts on BecomingOS/lifeOS/LifeOS naming and stage. Source DOCX resolves: BecomingOS external, lifeOS internal alias, pre-MVP with limited private beta only. |
@@ -35,7 +35,7 @@ Evidence used: `docs/00_repository_control/file_inventory.md`, `docs/00_reposito
 | `09_agent_prompts/` | Specialist prompt evidence | Future root `10_agent_prompts/*` if needed | Superseded later / retained evidence | Yes for product claims | Prompts are operational aids, not product authority. |
 | `10_operations_testing_accessibility/` | Testing, support, analytics, accessibility, operations evidence | Future `08_operations_testing_accessibility/*` | Superseded later / retained evidence | Yes | Closed-beta/production operations language is planning only. WCAG 2.2 AA is default baseline. |
 | `docs/00_repository_control/` | Earlier audit/control outputs | Root `00_repository_control/*` | Nested docs candidate / retained evidence | Yes | Useful inventory, duplicate, contradiction, gap, map, and archive evidence. Not final structure. |
-| `docs/02_product/` | Nested product/source folder | Source DOCX retained at owner-named path; root `02_product/*` for canonical docs | Unresolved | P0 for source DOCX only | Source file path/name mismatch must be owner-resolved. Nested folder is not the canonical documentation structure. |
+| `docs/02_product/` | Nested product/source folder | Source DOCX retained at owner-named path; root `02_product/*` for canonical docs | Unresolved | P0 for source DOCX only | The nested path previously contained an earlier copy of the source DOCX. After owner approval, the canonical DOCX path is now at `02_product/`, and nested docs remain evidence only. |
 | `docs/10_agent_prompts/` | Earlier consolidation prompts | Future root prompt/control docs if needed | Nested docs candidate / retained evidence | Yes for product claims | Prior prompts proposed nested docs. Current owner approach is root canonical. |
 | `scripts/` | Consolidation helper scripts | Future root process notes if needed | Retained evidence / unresolved | Yes for product claims | Do not run cleanup/archive scripts without owner approval. |
 | Top-level app/MVP audit files | Implementation-adjacent evidence and older readiness/audit notes | `00_repository_control/canonical_gap_check.md`; future release readiness/product experience docs | Unresolved / old evidence | Yes | App, database, MVP, and hardening references are evidence only and do not approve code, public MVP, or production readiness. |

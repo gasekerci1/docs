@@ -4,13 +4,13 @@ Current status: approved source-of-truth record for product documentation.
 
 ## Current Product Source Of Truth
 
-`docs/02_product/becomingos_product_specification.docx` is the current highest-priority product source of truth for BecomingOS.
+`02_product/becomingos_product_specification.docx` is the current highest-priority product source of truth for BecomingOS. (This path reflects the actual location of the DOCX file as confirmed by repository evidence.)
 
 ## Source Hierarchy
 
-Older files in this repository are supporting evidence unless they conflict with `docs/02_product/becomingos_product_specification.docx`.
+Older files in this repository are supporting evidence unless they conflict with `02_product/becomingos_product_specification.docx`.
 
-If a conflict exists, resolve it in favour of `docs/02_product/becomingos_product_specification.docx` unless a later explicit owner approval says otherwise. Do not silently remove conflicting information; preserve it as traceability evidence and document the resolution.
+If a conflict exists, resolve it in favour of `02_product/becomingos_product_specification.docx` unless a later explicit owner approval says otherwise. Do not silently remove conflicting information; preserve it as traceability evidence and document the resolution.
 
 ## Key Source-Of-Truth Decisions
 
@@ -43,5 +43,4 @@ If a conflict exists, resolve it in favour of `docs/02_product/becomingos_produc
 
 ## Conflict Rule
 
-Conflicts must be resolved in favour of `docs/02_product/becomingos_product_specification.docx` unless the owner explicitly approves a different decision in a later dated decision record.
-
+Conflicts must be resolved in favour of `02_product/becomingos_product_specification.docx` unless the owner explicitly approves a different decision in a later dated decision record.
