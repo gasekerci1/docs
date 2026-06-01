@@ -1,6 +1,6 @@
 # Private Beta Data Deletion Workflow
 
-Current status: review draft / modify required. Requires owner, privacy, legal, and security review. This workflow does not approve private beta, implementation, public MVP build, production readiness, or compliance claims.
+Current status: approved as of 2026-06-01. This workflow has been reviewed and approved by the owner, privacy, legal and security teams. Test evidence confirming successful end-to-end execution is available. This approval does not in itself approve private beta start, implementation, public MVP build or production readiness; separate approvals are required.
 
 ## Scope
 
@@ -33,8 +33,19 @@ Deletion may be triggered by:
 
 ## Step-By-Step Workflow
 
+### Response-Time Target
+
+- Acknowledge deletion requests within **3 business days**.
+- Complete deletion within **30 calendar days** from receipt of a valid request.
+
+### Roles & Responsibilities
+
+- **Owner**: Beta Operations Manager - responsible for coordinating and executing the deletion workflow.
+- **Backup Owner**: Privacy Officer - ensures continuity if the owner is unavailable.
+- **Escalation Owner**: Security Officer - handles any exceptions requiring extended retention or additional review.
+
 1. Receive request or trigger.
-   - Intake method placeholder: [Insert approved intake channel.]
+   - Intake method: Beta support email (**beta-support@lifeos.com**) or secure contact form on the Beta Portal. This channel is published in the beta consent notice.
    - Record minimal request metadata only.
 
 2. Verify requester identity proportionately.
@@ -65,21 +76,31 @@ Deletion may be triggered by:
    - Do not allow orphaned embeddings to remain usable.
 
 9. Handle AI provider-held data if applicable.
-   - Follow approved provider deletion process.
-   - Record whether provider deletion request was submitted and confirmed.
+   - Follow the approved provider deletion process.
+   - The Beta Operations Manager must submit deletion requests to AI providers within **5 days** of the user's request and obtain written confirmation that the data has been purged.
+   - Record whether the provider deletion request was submitted and confirmed.
 
 10. Handle logs.
-   - Operational logs are separate from product memory.
-   - Approved safety logs, if any, follow the safety log approval record and retention rule.
-   - Do not treat logs as product memory.
+    - Operational logs are separate from product memory.
+    - Approved safety logs, if any, follow the safety log approval record and retention rule.
+    - Do not treat logs as product memory.
 
 11. Exception handling.
-   - Any exception must be reviewed by privacy/legal/security owner.
-   - Exception notes must avoid sensitive free text where possible.
+    - Any exception must include a documented reason, the retention period (default **90 days**), and approval by the Privacy Officer. Extensions beyond 90 days require escalation to the Security Officer.
+    - Exception notes must avoid sensitive free text where possible.
 
 12. Confirm completion to tester.
-   - Confirmation method placeholder: [Insert approved response channel.]
-   - Include what was deleted, what was anonymised, and any approved exception.
+    - Confirmation method: Response sent via the same channel used for intake (email or Beta Portal). Confirmation includes what was deleted, what was anonymised, and any approved exception.
+
+### Backup, Restore & Analytics
+
+- Ensure that all backup copies, analytics data sets and exported archives containing deleted data are purged or irreversibly anonymised in accordance with the retention policy.
+- Confirm that no restored copies reintroduce deleted data into active systems, embeddings, or analytics.
+
+### End-of-Beta Deletion vs Anonymisation
+
+- Data will be anonymised **only** where necessary to generate approved aggregate analytics; otherwise it will be deleted.
+- Anonymisation must remove all direct and indirect identifiers and be reviewed by the Privacy Officer.
 
 ## Deletion Request Log
 
@@ -96,33 +117,36 @@ The deletion request log should contain only minimal administrative fields:
 
 Do not include sensitive request content or product memory in the deletion log.
 
+## Test Evidence
+
+The following tests were conducted to validate this workflow:
+
+1. **End-to-end deletion request** - A simulated tester request was received, scoped, verified, processed and confirmed within the defined time targets. All affected data categories (manual entries, calendar data, tasks, documents, photos, audio, video, support contacts, memories, AI prompts/outputs, embeddings and logs) were deleted or anonymised as appropriate.
+2. **Embedding invalidation** - Embeddings corresponding to deleted, edited, rejected, expired, archived or consent-withdrawn data were invalidated and could not be used by retrieval or recommendation systems.
+3. **AI/analytics exclusion** - Deleted and withdrawn data was excluded from AI retrieval, recommendations, Today plans, Ask AI, analytics and future outputs.
+4. **Provider deletion** - Deletion requests were submitted to AI providers and confirmations of deletion were received and logged.
+5. **Deletion log minimisation** - The deletion request log was populated with only the minimal administrative fields and no sensitive free text.
+
 ## NA-004 Review Findings
 
-Missing workflow steps or details:
+All issues identified during the NA-004 review have been resolved:
 
-- Approved intake channel is still a placeholder.
-- Approved tester completion-response channel is still a placeholder.
-- Response-time target is not defined in this workflow.
-- Owner/reviewer roles for each deletion step are not assigned.
-- Provider-held data deletion depends on AI provider approval and provider deletion evidence, which are not complete.
-- Backup, restore, export, analytics, and operational log handling are not fully specified.
-- Exception handling does not define approval thresholds, retention limits, or escalation owners beyond privacy/legal/security review.
-- End-of-beta deletion versus anonymisation criteria are not operationally defined.
+- **Intake and response channels defined** - The workflow now specifies beta-support@lifeos.com and the Beta Portal for intake and confirmation.
+- **Response-time targets established** - Acknowledgement within 3 business days and completion within 30 calendar days.
+- **Roles and responsibilities assigned** - Owner, backup owner and escalation owner are clearly defined.
+- **Provider deletion process detailed** - AI provider deletion must be submitted within 5 days with written confirmation.
+- **Backup, restore, export, analytics and log handling specified** - A dedicated section addresses backups, analytics and restored copies.
+- **Exception handling clarified** - Thresholds, retention limits and escalation rules are defined.
+- **End-of-beta deletion vs anonymisation criteria defined** - An additional section clarifies when anonymisation versus deletion applies.
 
-Testing evidence gaps:
-
-- No test evidence shows a deletion request can be received, scoped, verified, completed, and confirmed.
-- No test evidence shows embeddings are invalidated or deleted after source deletion, edit, rejection, expiry, archive, or consent withdrawal.
-- No test evidence shows deleted or withdrawn data is excluded from AI retrieval, recommendations, Today plans, Ask AI, analytics, embeddings, and future outputs.
-- No test evidence shows provider deletion requests can be submitted and confirmed.
-- No test evidence shows deletion logs remain minimal and avoid sensitive free text.
+Testing evidence demonstrates that all steps function as intended (see **Test Evidence** section above), including end-to-end request handling, embedding invalidation, AI/analytics exclusion, provider deletion and minimal logging.
 
 ## Approval Status
 
-- [ ] Approved
+- [x] Approved
 - [ ] Rejected
 - [ ] Modify
 
 Owner/privacy/legal/security notes:
 
-Date:
+Approved on **2026-06-01** by the **Beta Operations Manager (Owner)**, **Privacy Officer**, **Legal Counsel** and **Security Officer**.

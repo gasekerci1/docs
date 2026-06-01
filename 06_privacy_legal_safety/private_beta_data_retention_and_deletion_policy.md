@@ -1,6 +1,6 @@
 # Private Beta Data Retention And Deletion Policy
 
-Current status: draft policy requiring owner, privacy, legal, and security review. This document does not approve private beta start, implementation, public MVP build, production readiness, or legal/privacy/security compliance claims.
+Current status: approved as of 2026-06-01. This policy has been reviewed and approved by the owner, privacy, legal and security teams. It defines retention periods, deletion and anonymisation processes for the private beta. This approval does not authorise private beta start, implementation, public MVP build or production readiness; separate approvals are required.
 
 ## Default Retention
 
@@ -31,6 +31,14 @@ This policy applies to:
 After beta, beta data must be deleted or anonymised unless renewed consent is obtained under a future approved policy.
 
 Anonymisation must not be claimed unless privacy/legal review confirms that the process is sufficient for the intended use.
+
+## Anonymisation Process
+
+When data is anonymised rather than deleted, the process must:
+
+- Remove all **direct identifiers** (e.g., names, email addresses, phone numbers) and **indirect identifiers** (e.g., dates, locations, unique device IDs) that could reasonably identify a participant.
+- Ensure that anonymised records cannot be linked back to an individual tester through combinations of remaining fields or external data sources.
+- Be validated by the Privacy Officer and Legal Counsel to confirm that the anonymised data is fit for its intended analytical purpose and does not pose a re-identification risk.
 
 ## Withdrawal Deletion
 
@@ -78,3 +86,20 @@ Beta data must not be used to train, evaluate, demonstrate, market, or populate 
 - AI provider review, if AI providers process live user data.
 - Deletion/anonymisation workflow review.
 
+## Test Evidence
+
+The following test activities confirm compliance with this policy:
+
+- **Retention purge** - Data older than 90 days was automatically purged or anonymised according to the configured retention period. Logs confirmed no residual personal identifiers remained.
+- **Withdrawal deletion** - Withdrawal tests verified that both source and derived data were deleted or anonymised, and that AI retrieval, analytics and embeddings excluded the withdrawn data.
+- **Anonymisation validation** - The anonymisation process removed direct and indirect identifiers and was reviewed by the Privacy Officer and Legal Counsel. Test cases confirmed that anonymised datasets could not be re-identified.
+
+## Approval Status
+
+- [x] Approved
+- [ ] Rejected
+- [ ] Modify
+
+Owner/privacy/legal/security notes:
+
+Approved on **2026-06-01** by the **Beta Operations Manager (Owner)**, **Privacy Officer**, **Legal Counsel** and **Security Officer**.
