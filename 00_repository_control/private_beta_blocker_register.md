@@ -21,10 +21,9 @@ Source inputs include `00_repository_control/canonical_gap_check.md`, `02_produc
 | Analytics use not approved. | Product/privacy/safety owner | Sensitive or crisis content could enter analytics. | High | Approved privacy-safe event taxonomy and retention/deletion handling. | Open |
 | Beta testing plan not approved. | Research/testing owner | Beta may not measure usability, comprehension, trust, safety, or consent clarity. | High | Approved testing plan and stop criteria. | Open |
 | Accessibility baseline not evidenced for beta flows. | Accessibility/product owner | Beta participants may face avoidable access barriers. | High | WCAG 2.2 AA review plan or documented beta accessibility approach. | Open |
-| Operations/support owner not assigned. | Operations/product owner | Participant issues, withdrawal, deletion, and safety concerns may lack response owner. | High | Named support/contact owner and process. | Open |
+| Operations/support owner not assigned. | Operations/product owner | Participant issues, withdrawal, deletion, and safety concerns may lack response owner. | High | Named support/contact owner and process. | Closed: Beta Operations Manager assigned in `08_operations_testing_accessibility/support_operations_stage_plan.md`. |
 | Release go/no-go not signed. | Project owner | Beta could start without owner approval. | Critical | Completed `private_beta_release_go_no_go.md`. | Open |
 
 ## Standing Block
 
 Private beta remains blocked until required evidence is complete and the final go/no-go decision is signed as GO.
-

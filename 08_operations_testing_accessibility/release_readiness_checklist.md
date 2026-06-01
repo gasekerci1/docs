@@ -35,7 +35,7 @@ This checklist does not approve private beta, public MVP build, production readi
 - [ ] Analytics review approved, if analytics are used.
 - [ ] Support Circle rules approved, if included.
 - [ ] Testing plan and stop criteria approved.
-- [ ] Operations/support owner assigned.
+- [x] Operations/support owner assigned.
 - [ ] Final private beta go/no-go signed GO.
 
 ## Public MVP Gates

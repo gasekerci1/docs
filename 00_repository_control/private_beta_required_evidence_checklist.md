@@ -19,7 +19,7 @@ Evidence status rule: mark an item as Present only when the repository contains 
 | Support Circle rules | Approved inclusion/exclusion decision and permissions/alerting rules. | Boundaries exist in safety/privacy docs; no final Support Circle beta decision found. | Missing |
 | Testing plan approval | Research/testing owner approval of private beta plan. | Draft plan exists at `08_operations_testing_accessibility/private_beta_testing_plan.md`; approval not found. | Missing |
 | Stop criteria approval | Approved stop criteria and responsible owner. | Stop criteria exist in testing plan; approval and owner assignment not found. | Missing |
-| Operations/support owner | Named contact/process owner for participant support, deletion/export, withdrawal, and safety concerns. | Blocker register says operations/support owner not assigned. | Missing |
+| Operations/support owner | Named contact/process owner for participant support, deletion/export, withdrawal, and safety concerns. | `08_operations_testing_accessibility/support_operations_stage_plan.md` assigns Beta Operations Manager as named private beta operations/support owner and defines support boundaries, channels, logging, and escalation. | Present |
 | Accessibility beta evidence | WCAG 2.2 AA review plan or documented beta accessibility approach for beta-facing flows. | Blocker register says accessibility baseline not evidenced. | Missing |
 | Owner final go/no-go | Completed final decision signed GO by final project owner after all required approvals. | Template exists at `08_operations_testing_accessibility/private_beta_release_go_no_go.md`; default is NO-GO and unsigned. | Missing |
 
@@ -30,4 +30,3 @@ Current evidence state: planning documents exist, but required completed evidenc
 Current go/no-go status: NO-GO.
 
 Private beta must not start until all required evidence is complete or explicitly waived by the appropriate owner in a signed decision, and the final project owner signs GO.
-
