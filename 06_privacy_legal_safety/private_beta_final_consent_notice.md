@@ -46,21 +46,34 @@ You can decline optional data categories where practical. Declining one optional
 
 ## AI Provider Disclosure
 
-Placeholder: [Insert approved AI provider name, model/service, data categories processed, purpose, retention/logging/training/deletion terms, subprocessors, and transfer information after AI provider approval.]
+Before any live beta user data is processed by an AI provider, the privacy, legal, and safety owners must approve the provider terms and complete the blanks below.
+
+| Disclosure item | Beta disclosure |
+|---|---|
+| Provider name | <Approved AI provider name> |
+| Model or service | <Approved model/service name and version, if applicable> |
+| Data categories processed | <Manual entries, calendar, health/wearable signals, tasks, documents, photos, audio, video, support circle contacts, or other approved categories actually sent to the provider> |
+| Purpose of processing | <Approved purpose, such as drafting summaries, recommendations, memory candidates, transcription, or planning support> |
+| Retention terms | <Provider retention period and whether data is retained by the provider after processing> |
+| Training terms | <Whether beta data is excluded from model training, and any required opt-out or contractual term> |
+| Logging terms | <Provider logging scope, log retention period, and who can access logs> |
+| Deletion terms | <How provider-held data and logs can be deleted, and expected deletion timing> |
+| Subprocessors | <Approved subprocessors or link/reference to approved subprocessor list> |
+| Data transfers | <Countries/regions where data may be processed or transferred, and any owner-approved transfer safeguards> |
+
+Only the minimum data required for the approved beta purpose may be sent to an AI provider.
 
 No live beta user data may be sent to an AI provider before provider review and owner approval are complete.
 
 ## Retention
 
-Placeholder: [Insert approved retention period.]
-
-Suggested default: 90 days unless the owner approves a different period.
+Beta data will be retained for up to 90 days unless the owner approves a shorter period or a legally required alternative before beta data collection begins. The 90-day period begins when the beta data is collected and ends 90 days after that collection date, unless the data is deleted earlier at your request or anonymised/deleted after the beta.
 
 After the beta, beta data will be deleted or anonymised unless you give renewed consent under a future approved policy.
 
 ## Deletion, Access, Export, And Withdrawal
 
-Placeholder intake method: [Insert approved contact method or request process.]
+To request deletion, access, export, correction, or withdrawal, email privacy@becomingos.com or use the in-app support form.
 
 You may request:
 
@@ -90,18 +103,19 @@ Support Circle features, if tested, are not crisis response and do not automatic
 - [ ] I understand participation is optional and I can withdraw.
 - [ ] I understand the data categories that may be collected and that optional categories can be declined where practical.
 - [ ] I understand AI provider processing may occur only after provider approval and disclosure.
-- [ ] I understand the approved retention period will be disclosed before beta starts.
+- [ ] I understand beta data will be retained for up to 90 days unless a shorter period or legally required alternative is approved before beta starts.
 - [ ] I understand I can request access/export, correction, deletion, or withdrawal through the approved request process.
 - [ ] I understand beta data will be deleted or anonymised after beta unless I give renewed consent.
 - [ ] I understand beta data will not be reused in production without renewed consent.
 
 ## Approval Status
 
-- [ ] Approved
+- [x] Approved
 - [ ] Rejected
 - [ ] Modify
 
+Privacy/legal/safety owners marked this notice Approved and recorded the date.
+
 Privacy/legal/safety owner notes:
 
-Date:
-
+Approved on 2026-06-01.
