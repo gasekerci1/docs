@@ -9,9 +9,9 @@ Current status: repository dashboard only. This document does not approve privat
 | Product name | BecomingOS |
 | Internal repository alias | lifeOS |
 | Product source of truth | `02_product/becomingos_product_specification.docx` |
-| Current stage | Documentation planning active; pre-MVP with limited private beta planning only |
+| Current stage | Pre-MVP with limited private beta approved |
 | Documentation planning | Active |
-| Private beta | NO-GO |
+| Private beta | GO for limited trusted private beta only |
 | Public MVP/build | NO-GO |
 | Production | NO-GO |
 | Public launch | NO-GO |
@@ -33,17 +33,11 @@ Current status: repository dashboard only. This document does not approve privat
 
 | Blocker | Blocks private beta? | Blocks public MVP/build? | Blocks production? |
 |---|---|---|---|
-| Source DOCX filename/path alignment awaiting owner decision confirmation. | Yes | Yes | Yes |
-| Final beta consent notice not approved. | Yes | Yes | Yes |
-| AI provider due diligence not completed. | Yes | Yes | Yes |
-| Retention/deletion/export/withdrawal workflows not approved and not tested. | Yes | Yes | Yes |
-| Separate beta environment not approved. | Yes | Yes | Yes |
-| Safety logging and crisis-boundary controls not approved. | Yes | Yes | Yes |
-| Security review incomplete. | Yes | Yes | Yes |
-| Evidence/assumption register still requires validation updates. | Yes | Yes | Yes |
+| Public MVP/build evidence incomplete. | No | Yes | Yes |
+| Production evidence incomplete. | No | Yes | Yes |
+| Evidence/assumption register still requires validation updates for public MVP/production evidence. | No | Yes | Yes |
 | User research and market validation incomplete. | No | Yes | Yes |
-| Accessibility QA evidence missing. | Yes | Yes | Yes |
-| Release go/no-go approvals unsigned. | Yes | Yes | Yes |
+| Accessibility QA evidence is prototype-flow evidence only, not public MVP or production conformance evidence. | No | Yes | Yes |
 | Archive approval not granted. | No | No | No |
 
 ## Evidence Status
@@ -52,18 +46,18 @@ Current status: repository dashboard only. This document does not approve privat
 |---|---|
 | Product source of truth | Named; path updated to root-level `02_product/` |
 | Owner decisions | Recorded for DEC-001 to DEC-030 |
-| Private beta evidence | Planning docs exist; required signed approvals missing |
+| Private beta evidence | Required limited private beta approvals signed on 2026-06-01 |
 | Public MVP/build evidence | Missing or incomplete |
 | Production evidence | Missing |
 | User research | Pending/incomplete |
 | Market validation | Assumptions only |
-| AI provider approval | Not approved |
-| AI memory/retrieval/embedding evidence | Conceptual rules exist; test evidence missing |
-| Privacy/legal/safety | Planning docs exist; no broad release/compliance approval |
-| Security | Conceptual threat model exists; review incomplete |
-| Accessibility | WCAG 2.2 AA baseline decision exists; QA evidence missing |
-| Operations/support | Planning docs exist; owners/staffing not approved |
-| Analytics | Conceptual taxonomy exists; live use not approved |
+| AI provider approval | OpenAI approved for narrow limited private beta scope only |
+| AI memory/retrieval/embedding evidence | Private beta rules approved; public MVP/production evidence still missing |
+| Privacy/legal/safety | Limited private beta approvals signed; no broad release/compliance approval |
+| Security | Limited private beta threat model approved; production security review missing |
+| Accessibility | Prototype-flow QA evidence approved; no WCAG/compliance claim |
+| Operations/support | Beta Operations Manager assigned for limited private beta |
+| Analytics | Privacy-safe taxonomy approved for limited private beta only |
 
 ## Archive Status
 
@@ -75,8 +69,8 @@ Reason: source evidence must be preserved until canonical replacements, traceabi
 
 | Stage | Current status | Required next approval |
 |---|---|---|
-| Documentation planning | Active | Owner confirmation of source evidence baseline and source DOCX path alignment |
-| Private beta | NO-GO | Product, privacy/legal, safety, AI/data, security, research/testing, and final owner approvals |
+| Documentation planning | Active | Ongoing evidence/register maintenance only |
+| Private beta | GO for limited trusted private beta only | Operate only within signed approvals and stop criteria |
 | Public MVP/build | NO-GO | Public MVP evidence gates and final owner approval |
 | Production | NO-GO | Production evidence gates and final owner approval |
 | Archive/delete/move | NO-GO | Traceability-backed archive approval packet signed by owner |

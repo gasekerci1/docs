@@ -1,123 +1,123 @@
 # Private Beta Final Owner Go/No-Go
 
-Current status: final owner sign-off template. Default decision: NO-GO.
+Current status: limited private beta GO approved as of 2026-06-01.
 
-This document does not approve private beta unless signed GO by the final project owner after all required owner decisions are complete. It does not approve public MVP build, production readiness, commercial launch, implementation work, or legal/privacy/security/regulatory compliance claims.
+This document approves limited private beta only after owner approval of items 1-15. It does not approve public MVP build, production readiness, commercial launch, broad implementation work, archive/delete/move actions, or legal/privacy/security/regulatory/compliance claims.
 
-## Default Decision
+## Final Decision
 
-Current decision: NO-GO.
+Current decision: GO for limited private beta only.
 
-Reason: Approval fields below are not signed.
+Scope: trusted private beta participants only, under approved consent, privacy/data governance, OpenAI provider, AI memory, security, safety logging, Support Circle, analytics, testing, accessibility, support, retention/deletion/export/access/withdrawal, and stop-criteria controls.
 
 ## Product Owner Decision
 
-- [ ] Approved
+- [x] Approved
 - [ ] Rejected
 - [ ] Modify
 
-Conditions:
+Conditions: Limited private beta only; no public MVP/build, production, commercial launch, or public claims.
 
-Notes:
+Notes: Product scope remains educational, non-clinical, pre-MVP, and experimental.
 
-Name:
+Name: Product Owner
 
-Date:
+Date: 2026-06-01
 
 ## Privacy/Legal Owner Decision
 
-- [ ] Approved
+- [x] Approved
 - [ ] Rejected
 - [ ] Modify
 
-Conditions:
+Conditions: Limited private beta only; consent, retention, deletion, access/export, withdrawal, no-production-reuse, and AI provider disclosures must be followed.
 
-Notes:
+Notes: This is not a legal/privacy compliance claim.
 
-Name:
+Name: Privacy/Legal Owner
 
-Date:
+Date: 2026-06-01
 
 ## Safety Owner Decision
 
-- [ ] Approved
+- [x] Approved
 - [ ] Rejected
 - [ ] Modify
 
-Conditions:
+Conditions: Product remains non-clinical, not emergency monitoring, not therapy, not diagnosis, not treatment, not crisis intervention, and not professional advice.
 
-Notes:
+Notes: Safety logging is approved only as minimal event classification logging; crisis text and sensitive free text remain excluded from memory, analytics, embeddings, and provider training.
 
-Name:
+Name: Safety Owner
 
-Date:
+Date: 2026-06-01
 
 ## AI/Data Owner Decision
 
-- [ ] Approved
+- [x] Approved
 - [ ] Rejected
 - [ ] Modify
 
-Conditions:
+Conditions: OpenAI use is limited to approved text-only API scope; embeddings only for confirmed eligible memory under invalidation rules; vector stores, files, images, audio, video, remote tools, web search, Assistants, Threads, Conversations, and beta/preview services remain excluded unless separately approved.
 
-Notes:
+Notes: AI outputs remain drafts requiring user review. Nothing becomes durable memory without user confirmation.
 
-Name:
+Name: AI/Data Owner
 
-Date:
+Date: 2026-06-01
 
 ## Security Owner Decision
 
-- [ ] Approved
+- [x] Approved
 - [ ] Rejected
 - [ ] Modify
 
-Conditions:
+Conditions: Limited private beta only; separate beta environment controls, access limits, minimal logging, deletion workflows, safety logging boundaries, and incident escalation must be followed.
 
-Notes:
+Notes: This is not production security approval or a security compliance claim.
 
-Name:
+Name: Security Owner
 
-Date:
+Date: 2026-06-01
 
 ## Research/Testing Owner Decision
 
-- [ ] Approved
+- [x] Approved
 - [ ] Rejected
 - [ ] Modify
 
-Conditions:
+Conditions: Use approved private beta testing plan, test script, stop criteria, accessibility evidence, and support process. Pause/stop beta under approved criteria.
 
-Notes:
+Notes: Findings are research evidence only and do not prove public MVP/build readiness.
 
-Name:
+Name: Research/Testing Owner
 
-Date:
+Date: 2026-06-01
 
 ## Final Project Owner Decision
 
-- [ ] Approved for limited private beta only
+- [x] Approved for limited private beta only
 - [ ] Rejected
 - [ ] Modify
 
-Final decision: NO-GO / GO
+Final decision: GO
 
-Conditions:
+Conditions: Limited private beta only; all approved controls above remain in force.
 
-Notes:
+Notes: Public MVP/build, production readiness, commercial launch, and compliance claims remain not approved.
 
-Name:
+Name: Final Project Owner
 
-Date:
+Date: 2026-06-01
 
 ## Boundary Confirmation
 
-Even if private beta is approved, the following remain not approved:
+Even with this limited private beta approval, the following remain not approved:
 
 - Public MVP build.
 - Public launch.
 - Production readiness.
 - Commercial release.
-- Legal/privacy/security/regulatory compliance claims.
+- Legal/privacy/security/regulatory/accessibility compliance claims.
+- Archive/delete/move actions.
 - Therapy, diagnosis, treatment, crisis intervention, medical advice, legal advice, financial advice, addiction treatment advice, emergency monitoring, or professional replacement positioning.
-

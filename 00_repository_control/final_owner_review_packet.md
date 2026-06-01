@@ -28,7 +28,7 @@ Known issue: repository control docs note an unresolved filename/path mismatch i
 | Area | Current status |
 |---|---|
 | Documentation planning | Active |
-| Private beta | NO-GO |
+| Private beta | GO for limited trusted private beta only |
 | Public MVP/build | NO-GO |
 | Production | NO-GO |
 | Public launch | NO-GO |
@@ -135,4 +135,3 @@ Date:
 ## Default Recommendation
 
 Continue documentation governance and evidence gathering. Do not approve private beta, public MVP/build, production, public launch, or archive/delete/move until the relevant gate packet is signed with supporting evidence.
-

@@ -1,6 +1,6 @@
 # Private Beta Final Consent Notice
 
-Current status: approval-ready draft. Requires privacy, legal, and safety owner approval before use. This notice does not approve private beta, public MVP build, production readiness, or any legal/privacy/security/regulatory compliance claim.
+Current status: approved for limited private beta use as of 2026-06-01. This notice does not approve public MVP build, production readiness, or any legal/privacy/security/regulatory compliance claim.
 
 ## Invitation
 
@@ -46,24 +46,22 @@ You can decline optional data categories where practical. Declining one optional
 
 ## AI Provider Disclosure
 
-Before any live beta user data is processed by an AI provider, the privacy, legal, and safety owners must approve the provider terms and complete the blanks below.
+BecomingOS uses OpenAI GPT-5.5 to generate AI-drafted summaries and recommendations for reflection and planning support. Only the minimum data required for the approved beta purpose may be sent to the AI provider.
 
 | Disclosure item | Beta disclosure |
 |---|---|
-| Provider name | <Approved AI provider name> |
-| Model or service | <Approved model/service name and version, if applicable> |
-| Data categories processed | <Manual entries, calendar, health/wearable signals, tasks, documents, photos, audio, video, support circle contacts, or other approved categories actually sent to the provider> |
-| Purpose of processing | <Approved purpose, such as drafting summaries, recommendations, memory candidates, transcription, or planning support> |
-| Retention terms | <Provider retention period and whether data is retained by the provider after processing> |
-| Training terms | <Whether beta data is excluded from model training, and any required opt-out or contractual term> |
-| Logging terms | <Provider logging scope, log retention period, and who can access logs> |
-| Deletion terms | <How provider-held data and logs can be deleted, and expected deletion timing> |
-| Subprocessors | <Approved subprocessors or link/reference to approved subprocessor list> |
-| Data transfers | <Countries/regions where data may be processed or transferred, and any owner-approved transfer safeguards> |
+| Provider name | OpenAI |
+| Model or service | GPT-5.5 via approved OpenAI API/service configuration |
+| Data categories processed | Manual entries, calendar events, tasks, and other user-provided inputs that are intentionally submitted for AI-drafted summaries, recommendations, memory candidates, or planning support. Health/wearable signals, documents, photos, audio, video, or support circle contacts may be processed only if separately approved for a beta task and disclosed before use. |
+| Purpose of processing | Generate AI-drafted summaries, recommendations, memory candidates, and planning support for user review. AI outputs remain drafts and do not become durable memory without user confirmation. |
+| Retention terms | BecomingOS beta data is retained by BecomingOS for up to 90 days from collection unless deleted earlier, anonymised after beta, or subject to an approved shorter/legal alternative. OpenAI provider-side retention follows the approved OpenAI service terms and account configuration; owners must confirm the applicable retention setting before live beta data is sent. |
+| Training terms | BecomingOS beta data must not be used for model training unless renewed participant consent and owner/privacy/legal approval are obtained under a future approved policy. Owners must confirm the applicable OpenAI training setting before live beta data is sent. |
+| Logging terms | OpenAI provider-side logging follows the approved OpenAI service terms and account configuration. BecomingOS operational logs must remain minimal and must avoid sensitive free text where possible. |
+| Deletion terms | BecomingOS deletion, access, export, correction, and withdrawal requests follow the approved beta deletion and withdrawal workflows. Provider-held deletion, if applicable, must follow the approved OpenAI/provider deletion process and be recorded before live beta use. |
+| Subprocessors | OpenAI subprocessors, if any, are governed by the approved OpenAI provider terms. Owners must review and approve applicable subprocessor information before live beta data is sent. |
+| Data transfers | OpenAI processing and transfers, if any, are governed by the approved OpenAI provider terms. Owners must review and approve applicable data-transfer information before live beta data is sent. |
 
-Only the minimum data required for the approved beta purpose may be sent to an AI provider.
-
-No live beta user data may be sent to an AI provider before provider review and owner approval are complete.
+Live beta user data may be sent to the approved AI provider only within the approved private beta scope and only under the approved provider, data-minimisation, retention, deletion, logging, and consent rules.
 
 ## Retention
 
@@ -73,7 +71,7 @@ After the beta, beta data will be deleted or anonymised unless you give renewed 
 
 ## Deletion, Access, Export, And Withdrawal
 
-To request deletion, access, export, correction, or withdrawal, email privacy@becomingos.com or use the in-app support form.
+To request deletion, access, export, correction, or withdrawal, email gasekerci@gmail.com or use the in-app support form.
 
 You may request:
 
@@ -114,8 +112,8 @@ Support Circle features, if tested, are not crisis response and do not automatic
 - [ ] Rejected
 - [ ] Modify
 
-Privacy/legal/safety owners marked this notice Approved and recorded the date.
+Privacy/legal/safety owners marked this updated notice Approved and recorded the date.
 
 Privacy/legal/safety owner notes:
 
-Approved on 2026-06-01.
+Approved on 2026-06-01 for limited private beta use only. This approval does not approve public MVP build, production readiness, commercial launch, or compliance claims.

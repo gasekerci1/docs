@@ -9,7 +9,7 @@ This checklist does not approve private beta, public MVP build, production readi
 | Stage | Current status | Meaning |
 |---|---|---|
 | Documentation planning | Active | Canonical planning, traceability, and gate documents are being created. |
-| Private beta | NO-GO until owner approvals | Real data requires explicit consent and signed beta approvals. |
+| Private beta | GO for limited private beta only | Real data may be processed only within signed private beta approvals and boundaries. |
 | Public MVP | NO-GO | Public MVP/build gates are missing or incomplete. |
 | Production | NO-GO | Production readiness gates are not defined or approved. |
 
@@ -20,23 +20,23 @@ This checklist does not approve private beta, public MVP build, production readi
 - [x] Traceability map exists.
 - [x] Private beta planning docs exist.
 - [x] Public MVP/build gate docs exist.
-- [ ] Source DOCX filename/path mismatch resolved by owner.
+- [x] Source DOCX filename/path mismatch resolved by owner.
 - [ ] Archive/cleanup approval completed, if ever requested.
 
 ## Private Beta Gates
 
-- [ ] Final consent notice approved.
-- [ ] Privacy/data governance approved.
-- [ ] Retention/deletion/withdrawal/export workflow approved.
-- [ ] AI provider due diligence approved.
-- [ ] Separate beta environment approved.
-- [ ] Safety logging and crisis boundary controls approved.
-- [ ] Security review approved.
-- [ ] Analytics review approved, if analytics are used.
-- [ ] Support Circle rules approved, if included.
-- [ ] Testing plan and stop criteria approved.
+- [x] Final consent notice approved.
+- [x] Privacy/data governance approved.
+- [x] Retention/deletion/withdrawal/export workflow approved.
+- [x] AI provider due diligence approved.
+- [x] Separate beta environment approved.
+- [x] Safety logging and crisis boundary controls approved.
+- [x] Security review approved.
+- [x] Analytics review approved, if analytics are used.
+- [x] Support Circle rules approved, if included.
+- [x] Testing plan and stop criteria approved.
 - [x] Operations/support owner assigned.
-- [ ] Final private beta go/no-go signed GO.
+- [x] Final private beta go/no-go signed GO.
 
 ## Public MVP Gates
 

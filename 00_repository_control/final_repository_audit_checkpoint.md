@@ -27,7 +27,7 @@ Known unresolved source issue: repository control documents note a filename/path
 | Stage/action | Current status | Approval state |
 |---|---|---|
 | Documentation planning | Active | Governance documents exist; owner review still required for next decisions. |
-| Private beta | NO-GO | Required approvals and evidence are missing or pending. |
+| Private beta | GO for limited trusted private beta only | Required limited private beta approvals and evidence are recorded as of 2026-06-01. |
 | Public MVP/build | NO-GO | Evidence gates are missing or incomplete. |
 | Production | NO-GO | Production evidence and owner signoffs are missing. |
 | Public launch | NO-GO | No launch approval exists. |
@@ -100,4 +100,3 @@ No document in this checkpoint approves:
 Repository governance checkpoint: complete as a planning/control layer.
 
 Operational readiness result: **NO-GO for private beta, public MVP/build, production, public launch, and archive/delete/move** until the relevant owner gate packet is signed with supporting evidence.
-

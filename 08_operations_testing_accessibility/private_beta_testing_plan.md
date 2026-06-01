@@ -1,6 +1,6 @@
 # Private Beta Testing Plan
 
-Current status: planning document only. This document does not approve private beta start, public MVP build, production readiness, implementation work, or compliance claims.
+Current status: approved private beta testing plan as of 2026-06-01. This document does not approve public MVP build, production readiness, implementation work beyond limited private beta testing, or compliance claims.
 
 ## Participant Scope
 
@@ -64,3 +64,12 @@ Pause or stop beta if:
 - Environment separation or access controls fail.
 - Any owner, safety, privacy/legal, security, or research lead calls a stop.
 
+## Approval Status
+
+- [x] Approved
+- [ ] Rejected
+- [ ] Modify
+
+Owner notes:
+
+Approved on 2026-06-01 by research/testing, product, and safety owners for limited private beta testing only.

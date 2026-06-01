@@ -1,6 +1,6 @@
 # Retrieval And Embedding Rules
 
-Current status: conceptual pre-MVP/private-beta rules. This document does not approve implementation, vector storage, AI provider use, public MVP build, or production readiness.
+Current status: approved private-beta retrieval and embedding lifecycle rules as of 2026-06-01. This document does not approve public MVP build, production readiness, unrestricted vector storage, or compliance claims.
 
 Product source of truth: `docs/02_product/becomingos_product_specification.docx`.
 
@@ -103,3 +103,12 @@ These rules are derived from:
 - `04_ai_memory_and_data/Canonical data model.docx`.
 - `04_ai_memory_and_data/AI Interpretation Guide.docx`.
 
+## Approval Status
+
+- [x] Approved
+- [ ] Rejected
+- [ ] Modify
+
+Owner notes:
+
+Approved on 2026-06-01 by the AI/data owner for limited private beta use only. Embeddings may be generated only from confirmed eligible memory and must be invalidated or deleted when source eligibility changes. Vector stores remain excluded unless separately approved.

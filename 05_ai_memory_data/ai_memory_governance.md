@@ -1,8 +1,8 @@
 # AI Memory Governance
 
-Current status: conceptual AI and memory governance for BecomingOS.
+Current status: approved private-beta AI and memory governance for BecomingOS as of 2026-06-01.
 
-This document does not approve implementation, provider use, live processing, vector storage, production readiness, or public MVP build.
+This document approves limited private beta AI and memory governance rules only. It does not approve public MVP build, production readiness, unrestricted provider use, unrestricted vector storage, commercial launch, or compliance claims.
 
 ## AI Output Status
 
@@ -47,3 +47,12 @@ AI must not act as a therapist, clinician, emergency responder, professional adv
 
 AI may support reflection, action planning, and draft recommendations only within the educational, non-clinical product boundary.
 
+## Approval Status
+
+- [x] Approved
+- [ ] Rejected
+- [ ] Modify
+
+Owner notes:
+
+Approved on 2026-06-01 by the AI/data owner for limited private beta use only.

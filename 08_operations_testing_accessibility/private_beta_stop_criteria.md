@@ -1,6 +1,6 @@
 # Private Beta Stop Criteria
 
-Current status: approval-ready draft. This document does not approve private beta, public MVP build, production readiness, implementation, or compliance claims.
+Current status: approved private beta stop criteria as of 2026-06-01. This document does not approve public MVP build, production readiness, implementation beyond limited private beta testing, or compliance claims.
 
 ## Severity Levels
 
@@ -44,3 +44,12 @@ For any stop/pause event, record only:
 
 Do not record crisis text, sensitive free text, private reflections, diagnosis labels, documents, photos, audio, video, or transcripts in the stop record unless separately approved by privacy/legal/safety owners.
 
+## Approval Status
+
+- [x] Approved
+- [ ] Rejected
+- [ ] Modify
+
+Owner notes:
+
+Approved on 2026-06-01 by research/testing, safety, privacy/legal, and security owners for limited private beta stop/pause decisions only.

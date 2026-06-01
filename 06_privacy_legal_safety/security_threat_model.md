@@ -1,6 +1,6 @@
 # Security Threat Model
 
-Current status: conceptual private-beta threat model. This document does not approve implementation, architecture, public MVP build, production readiness, or live user data processing.
+Current status: approved private-beta security threat model as of 2026-06-01. This document does not approve public MVP build, production readiness, production architecture, broad implementation, or compliance claims.
 
 Product source of truth: `docs/02_product/becomingos_product_specification.docx`.
 
@@ -68,10 +68,18 @@ This document does not approve:
 
 ## Open Security Decisions
 
-- Final beta environment definition.
-- Access-control owner and access-review process.
-- AI provider data handling approval.
-- Retention, deletion, and anonymisation workflow.
-- Minimal logging and safety log policy.
-- Handling of documents, photos, audio, and video in beta.
+- Production security review.
+- Public MVP/build security review.
+- Production architecture.
+- Broad handling of documents, photos, audio, and video outside separately approved private beta scope.
+- Any future expansion beyond the approved limited private beta environment, provider, logging, consent, and deletion boundaries.
 
+## Approval Status
+
+- [x] Approved
+- [ ] Rejected
+- [ ] Modify
+
+Owner notes:
+
+Approved on 2026-06-01 by the security owner for limited private beta only. Public MVP/build, production readiness, production architecture, and compliance claims remain not approved.

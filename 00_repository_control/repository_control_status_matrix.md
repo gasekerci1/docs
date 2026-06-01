@@ -14,20 +14,20 @@ All approval packets, decision logs, and checklists remain pending / owner revie
 | `00_repository_control/archive_readiness_checklist.md` | Checklist before archive/move/delete. | ARCHIVE NO-GO. | No | Archive/delete/move | Complete source baseline, exact list, rollback, and workflow approvals. |
 | `00_repository_control/canonical_gap_check.md` | Identifies missing/incomplete canonical docs and gates. | Gap check only; open gaps remain. | No | All stages | Update as gaps are closed with evidence. |
 | `00_repository_control/canonical_rewrite_instructions.md` | Instructions for future canonical documentation work. | Canonical control instructions. | No | Documentation governance | Keep future agents aligned with root-canonical structure. |
-| `00_repository_control/current_status_dashboard.md` | Summarises current stage status and blockers. | Dashboard only; all gated stages NO-GO. | No | All stages | Keep updated after signed decisions or evidence changes. |
+| `00_repository_control/current_status_dashboard.md` | Summarises current stage status and blockers. | Dashboard only; limited private beta is GO, later gated stages remain NO-GO. | No | All stages | Keep updated after signed decisions or evidence changes. |
 | `00_repository_control/final_owner_review_packet.md` | Final owner-facing review packet for governance status. | Pending / owner review required. | No | Documentation governance; all gates | Owner to review decisions and requested next phase. |
 | `00_repository_control/final_repository_audit_checkpoint.md` | Final checkpoint confirming governance layers exist. | Checkpoint only; no approvals. | No | All stages | Use as reference for owner review. |
 | `00_repository_control/master_governance_index.md` | Top-level index of governance and canonical planning docs. | Master index only. | No | Documentation governance | Keep aligned with newly added control files. |
 | `00_repository_control/next_actions_register.md` | Prioritised next actions and blockers. | Action register only. | No | All stages | Owner should confirm priority order and assign owners. |
 | `00_repository_control/owner_decision_register.md` | Records DEC-001 to DEC-030 outcomes. | Canonical decision register. | Yes, listed source-of-truth decisions only | Documentation governance | Add dates/approver metadata if owner requests. |
-| `00_repository_control/private_beta_approval_decision_log.md` | Decision log for beta approval areas. | Pending / not approved. | No | Private beta | Fill only after signed evidence exists. |
-| `00_repository_control/private_beta_blocker_register.md` | Lists blockers before private beta. | All blockers open; private beta NO-GO. | No | Private beta | Resolve blockers and provide evidence. |
-| `00_repository_control/private_beta_final_owner_go_no_go.md` | Final private beta signoff template. | Default NO-GO; unsigned. | No | Private beta | Final owner signs only after all area approvals. |
-| `00_repository_control/private_beta_go_no_go_review_packet.md` | Prior private beta review packet. | NO-GO evidence. | No | Private beta | Supersede only with signed approval packet. |
-| `00_repository_control/private_beta_owner_approval_packet.md` | Owner-facing private beta approval packet. | Default NO-GO; pending owner review. | No | Private beta | Complete required approvals and evidence. |
+| `00_repository_control/private_beta_approval_decision_log.md` | Decision log for beta approval areas. | Approved for limited private beta as of 2026-06-01. | Yes, limited private beta only | Private beta | Keep public MVP/build and production gates separate. |
+| `00_repository_control/private_beta_blocker_register.md` | Lists blockers before private beta. | Private beta blockers closed for limited private beta as of 2026-06-01. | No | Private beta | Keep later-stage blockers separate. |
+| `00_repository_control/private_beta_final_owner_go_no_go.md` | Final private beta signoff. | GO signed for limited private beta as of 2026-06-01. | Yes, limited private beta only | Private beta | Operate only within signed conditions. |
+| `00_repository_control/private_beta_go_no_go_review_packet.md` | Prior private beta review packet. | Superseded by signed GO on 2026-06-01. | No | Private beta | Historical reference only. |
+| `00_repository_control/private_beta_owner_approval_packet.md` | Owner-facing private beta approval packet. | Superseded by signed GO on 2026-06-01. | No | Private beta | Historical reference only. |
 | `00_repository_control/private_beta_owner_approval_template.md` | Template for area owner signoff. | Unsigned template. | No | Private beta | Use only after evidence exists. |
-| `00_repository_control/private_beta_required_evidence_checklist.md` | Checklist of evidence required before beta. | Evidence missing/pending. | No | Private beta | Mark present only when completed evidence exists. |
-| `00_repository_control/private_beta_signoff_index.md` | Index of private beta signoff documents. | Index only; private beta NO-GO. | No | Private beta | Keep updated as signoff docs change. |
+| `00_repository_control/private_beta_required_evidence_checklist.md` | Checklist of evidence required before beta. | Required limited private beta evidence present as of 2026-06-01. | No | Private beta | Keep public MVP/build and production evidence separate. |
+| `00_repository_control/private_beta_signoff_index.md` | Index of private beta signoff documents. | Index only; limited private beta GO is recorded in final signoff. | No | Private beta | Keep updated as signoff docs change. |
 | `00_repository_control/production_owner_approval_packet.md` | Owner packet for production readiness/public launch. | Default reject / NO-GO; pending owner review. | No | Production | Complete production evidence gates before signoff. |
 | `00_repository_control/production_readiness_gate_register.md` | Production readiness gate register. | PRODUCTION NO-GO. | No | Production | Complete every production gate or signed waiver. |
 | `00_repository_control/production_required_evidence_checklist.md` | Production evidence checklist. | Evidence missing. | No | Production | Add evidence only when completed and signed. |
@@ -44,11 +44,10 @@ All approval packets, decision logs, and checklists remain pending / owner revie
 | Stage/action | Current status |
 |---|---|
 | Documentation planning | Active |
-| Private beta | NO-GO |
+| Private beta | GO for limited trusted private beta only |
 | Public MVP/build | NO-GO |
 | Production | NO-GO |
 | Public launch | NO-GO |
 | Archive/delete/move | NO-GO |
 
 No approval packet in this matrix may be treated as approved unless it contains signed owner approval and supporting evidence.
-

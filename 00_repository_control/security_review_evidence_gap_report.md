@@ -1,6 +1,6 @@
 # Security Review Evidence Gap Report
 
-Current status: NA-007 evidence gap report only. This document does not approve security readiness, architecture readiness, private beta, public MVP/build, production readiness, public launch, implementation, or compliance claims.
+Current status: NA-007 private beta security evidence reviewed and approved as of 2026-06-01. This document does not approve public MVP/build, production readiness, public launch, production architecture, broad implementation, or compliance claims.
 
 ## Review Inputs
 
@@ -20,25 +20,12 @@ Current matching repository files reviewed as supporting context:
 
 ## Security Review Status
 
-Security review status: incomplete / not approved.
+Security review status: approved for limited private beta only.
 
-The repository contains conceptual security and beta-environment planning. It does not contain signed Security owner review, evidence that a separate beta environment exists, evidence that controls have been implemented or tested, or production security closure.
+The repository contains approved private beta security planning, beta environment approval, safety logging limits, deletion/withdrawal workflows, OpenAI provider approval for narrow beta scope, and final limited private beta GO. This approval does not close public MVP or production security gates.
 
-## Missing Evidence
+## Remaining Evidence For Later Stages
 
-- Signed Security owner review for the private beta threat model.
-- Approved separate beta environment definition and isolation boundary.
-- Evidence that beta data is separated from development, demo, public-facing, and future production data.
-- Access-control owner, approved roles, least-access rules, access-review cadence, and joiner/leaver/change process.
-- Data storage location and owner for source data, memories, embeddings, logs, analytics, backups, and provider-held data.
-- Authentication and authorization model for beta participants, admins, support roles, and reviewers.
-- Secrets management owner, storage approach, rotation, revocation, and confirmation that secrets are not stored in docs.
-- Minimal logging policy with exclusions for sensitive free text and crisis text.
-- Safety logging decision and evidence that safety/crisis content is excluded from memory and analytics.
-- Backup/restore plan aligned with retention, deletion, export/access, withdrawal, and derived-data invalidation.
-- Deletion/export/access/correction/withdrawal test evidence, including embeddings and provider-held data if applicable.
-- AI provider security review, retention/logging/training/deletion terms, incident terms, subprocessors, and data-transfer evidence.
-- Incident response owner, severity model, escalation path, shutdown/recovery plan, and participant notification concept.
 - Security testing evidence for access control, logging exclusions, deletion/invalidation, provider exposure, prompt injection, and data leakage.
 - Production threat model closure or risk acceptance by Security owner.
 - Production architecture decision record, NFR approval, monitoring/logging policy, and production security programme evidence.
@@ -61,4 +48,4 @@ The repository contains conceptual security and beta-environment planning. It do
 - Safety/privacy/legal/security owners must decide safety logging status and crisis/safety data handling.
 - AI/data/privacy/legal/security owners must approve AI provider and embedding handling before any live user data is processed by providers or embedded.
 - Architecture/engineering and Security owners must keep production architecture and production security readiness not approved until production evidence exists.
-- Final project owner must keep private beta NO-GO until all required security, privacy/legal, safety, AI/data, research/testing, and final approval evidence is complete.
+- Final project owner approved limited private beta GO on 2026-06-01. Public MVP/build and production remain NO-GO until their separate security, privacy/legal, safety, AI/data, research/testing, and final approval evidence is complete.

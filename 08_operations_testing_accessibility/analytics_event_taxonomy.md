@@ -1,6 +1,6 @@
 # Analytics Event Taxonomy
 
-Current status: conceptual, privacy-safe analytics planning. This document does not approve implementation, analytics tooling, public MVP build, production readiness, or live user data processing.
+Current status: approved privacy-safe analytics taxonomy for limited private beta as of 2026-06-01. This document does not approve public MVP build, production readiness, broad analytics use, sensitive free-text analytics, crisis monitoring, surveillance, or compliance claims.
 
 Primary research source: `03_research_validation/evidence_based_growth_systems_report.md`.
 
@@ -32,3 +32,12 @@ The event taxonomy may help evaluate mechanism activation: goal setting, if-then
 
 Any analytics use in private beta requires consent, minimisation, retention limits, deletion handling, and review against `06_privacy_legal_safety/privacy_consent_data_governance.md`.
 
+## Approval Status
+
+- [x] Approved
+- [ ] Rejected
+- [ ] Modify
+
+Owner notes:
+
+Approved on 2026-06-01 by product, privacy/legal, and safety owners for limited private beta analytics only. Sensitive free text, crisis text, private reflections, documents, photos, audio, video, support contact details, and deleted/rejected/unconfirmed/expired/archived/consent-withdrawn data remain excluded.

@@ -1,6 +1,6 @@
 # Private Beta Test Script
 
-Current status: approval-ready draft. This script does not approve private beta, implementation, public MVP build, production readiness, or compliance claims.
+Current status: approved private beta test script as of 2026-06-01. This script does not approve public MVP build, production readiness, implementation work beyond limited private beta testing, or compliance claims.
 
 Use only after consent, privacy/legal/safety/security/AI provider reviews, and owner go/no-go approval are complete.
 
@@ -118,3 +118,12 @@ Ask:
 
 Record findings without unnecessary sensitive free text.
 
+## Approval Status
+
+- [x] Approved
+- [ ] Rejected
+- [ ] Modify
+
+Owner notes:
+
+Approved on 2026-06-01 by research/testing, product, and safety owners for limited private beta testing only.

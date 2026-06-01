@@ -1,6 +1,6 @@
 # Privacy, Consent, And Data Governance
 
-Current status: pre-MVP/private-beta planning policy. This document does not claim legal compliance, approve implementation, approve public MVP build, or approve production readiness.
+Current status: approved private-beta privacy, consent, and data governance policy as of 2026-06-01. This document does not claim legal compliance, approve implementation beyond limited private beta operation, approve public MVP build, or approve production readiness.
 
 Product source of truth: `docs/02_product/becomingos_product_specification.docx`.
 
@@ -72,12 +72,12 @@ Beta consent must disclose provider involvement at a level participants can unde
 
 Beta data must not be reused in production without renewed consent. After beta, data must be deleted or anonymised unless the participant gives renewed consent under an approved future policy.
 
-## Open Decisions
+## Approval Status
 
-- Final beta participant-facing notice.
-- Final retention period and deletion/anonymisation workflow.
-- AI provider terms and disclosure text.
-- Separate beta environment definition.
-- Access/export and withdrawal operating process.
-- Legal review before broad release or compliance claims.
+- [x] Approved
+- [ ] Rejected
+- [ ] Modify
 
+Owner notes:
+
+Approved on 2026-06-01 by the privacy/legal owner for limited private beta use only. Legal review remains required before broad release, public beta, compliance claims, commercial launch, or production reuse of beta data.

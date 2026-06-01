@@ -1,6 +1,6 @@
 # Private Beta Support Circle Rules
 
-Current status: approval-ready draft. Requires product, safety, privacy/legal, and owner approval before any Support Circle beta use. This document does not approve private beta, implementation, public MVP build, production readiness, or compliance claims.
+Current status: approved for optional limited private beta Support Circle use as of 2026-06-01. This document does not approve public MVP build, production readiness, emergency monitoring, crisis intervention, therapy, diagnosis, treatment, professional advice, or compliance claims.
 
 ## Boundary
 
@@ -46,7 +46,14 @@ Do not share by default:
 
 ## Support Contact Consent
 
-Support contact consent process placeholder: [Insert approved support contact notice/consent process.]
+Support contact consent process:
+
+- The participant must explicitly choose each support contact.
+- The participant must choose the sharing scope, purpose, and expiry/review date.
+- The support contact must receive a clear notice before receiving any shared information.
+- The notice must state that BecomingOS is not emergency monitoring, crisis response, therapy, diagnosis, treatment, or professional support.
+- The support contact must understand that shared information is limited to the participant-approved scope and may expire or be revoked.
+- No automatic alerting or sharing may occur without explicit prior participant consent and approved rules.
 
 If support contacts participate, they must understand:
 
@@ -86,11 +93,10 @@ If crisis or immediate danger appears, BecomingOS should signpost appropriate em
 
 ## Approval Status
 
-- [ ] Approved
+- [x] Approved
 - [ ] Rejected
 - [ ] Modify
 
 Product/safety/privacy/legal owner notes:
 
-Date:
-
+Approved on 2026-06-01 for optional limited private beta Support Circle use only. Support Circle remains opt-in, revocable, purpose-limited, time-limited, and not crisis response.

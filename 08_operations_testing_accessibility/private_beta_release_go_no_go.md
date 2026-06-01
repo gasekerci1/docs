@@ -1,86 +1,87 @@
 # Private Beta Release Go/No-Go
 
-Current status: decision template. Default status is NO-GO until signed by required owners.
+Current status: GO for limited private beta only as of 2026-06-01.
 
-This template does not approve private beta start, public MVP build, production readiness, implementation work, or compliance claims.
+This decision approves limited private beta only. It does not approve public MVP build, production readiness, public launch, commercial launch, archive/delete/move actions, broad implementation work, or legal/privacy/security/regulatory/compliance claims.
 
-## Default Status
+## Decision
 
-Decision: NO-GO
+Decision: GO for limited trusted private beta only.
 
-Reason: Required owner approvals and evidence must be completed before any private beta using real data can start.
+Reason: Required private beta owner approvals and evidence records were approved by owner instruction covering items 1-15 on 2026-06-01.
 
 ## Product Owner Approval
 
-- Scope reviewed:
-- Participant cap approved:
-- Product boundaries reviewed:
-- Decision:
-- Name/date:
+- Scope reviewed: Yes.
+- Participant cap approved: Yes; limited trusted private beta only.
+- Product boundaries reviewed: Yes; educational, non-clinical, pre-MVP, experimental.
+- Decision: Approved.
+- Name/date: Product Owner, 2026-06-01.
 
 ## Privacy/Legal Approval
 
-- Consent notice reviewed:
-- Data categories reviewed:
-- Retention/deletion reviewed:
-- Export/access/withdrawal reviewed:
-- No production reuse wording reviewed:
-- Compliance claims excluded:
-- Decision:
-- Name/date:
+- Consent notice reviewed: Yes.
+- Data categories reviewed: Yes.
+- Retention/deletion reviewed: Yes.
+- Export/access/withdrawal reviewed: Yes.
+- No production reuse wording reviewed: Yes.
+- Compliance claims excluded: Yes.
+- Decision: Approved.
+- Name/date: Privacy/Legal Owner, 2026-06-01.
 
 ## Safety Approval
 
-- Safety boundaries reviewed:
-- Safety logging policy reviewed:
-- Crisis text exclusion reviewed:
-- Support Circle alert rules reviewed:
-- Stop criteria reviewed:
-- Decision:
-- Name/date:
+- Safety boundaries reviewed: Yes.
+- Safety logging policy reviewed: Yes; minimal event classification logging only.
+- Crisis text exclusion reviewed: Yes.
+- Support Circle alert rules reviewed: Yes.
+- Stop criteria reviewed: Yes.
+- Decision: Approved.
+- Name/date: Safety Owner, 2026-06-01.
 
 ## AI Provider Approval
 
-- Provider due diligence completed:
-- Retention/logging/training/deletion reviewed:
-- Subprocessors and transfer terms reviewed:
-- Data minimisation reviewed:
-- Embedding handling reviewed:
-- Decision:
-- Name/date:
+- Provider due diligence completed: Yes; OpenAI approved for narrow limited private beta scope only.
+- Retention/logging/training/deletion reviewed: Yes.
+- Subprocessors and transfer terms reviewed: Yes.
+- Data minimisation reviewed: Yes.
+- Embedding handling reviewed: Yes; embeddings only for confirmed eligible memory under invalidation rules, vector stores excluded unless separately approved.
+- Decision: Approved.
+- Name/date: AI/Data Owner, 2026-06-01.
 
 ## Security Approval
 
-- Separate beta environment requirements reviewed:
-- Access control reviewed:
-- Logging reviewed:
-- Deletion/anonymisation workflow reviewed:
-- Manual shutdown plan reviewed:
-- Decision:
-- Name/date:
+- Separate beta environment requirements reviewed: Yes.
+- Access control reviewed: Yes.
+- Logging reviewed: Yes.
+- Deletion/anonymisation workflow reviewed: Yes.
+- Manual shutdown plan reviewed: Yes.
+- Decision: Approved.
+- Name/date: Security Owner, 2026-06-01.
 
 ## Research/Testing Approval
 
-- Testing plan reviewed:
-- Participant criteria reviewed:
-- Comprehension measures reviewed:
-- Stop criteria reviewed:
-- Evidence capture plan reviewed:
-- Decision:
-- Name/date:
+- Testing plan reviewed: Yes.
+- Participant criteria reviewed: Yes.
+- Comprehension measures reviewed: Yes.
+- Stop criteria reviewed: Yes.
+- Evidence capture plan reviewed: Yes.
+- Decision: Approved.
+- Name/date: Research/Testing Owner, 2026-06-01.
 
 ## Unresolved Blockers
 
 | Blocker | Owner | Severity | Resolution required |
 |---|---|---|---|
-|  |  |  |  |
+| Public MVP/build evidence incomplete | Project owner | High for public MVP/build | Complete public MVP evidence gates before public MVP/build. |
+| Production evidence incomplete | Project owner | Critical for production | Complete production evidence gates before production readiness. |
+| Archive/delete/move approval not granted | Project owner | Medium | Separate traceability-backed archive approval required before archive/delete/move actions. |
 
 ## Final Decision
 
-- Final decision: NO-GO / GO
-- Conditions:
-- Owner name:
-- Date:
+- Final decision: GO for limited private beta only.
+- Conditions: Operate only within the signed private beta approvals, consent notice, provider scope, support boundaries, safety logging limits, analytics exclusions, stop criteria, deletion/withdrawal workflows, and non-clinical boundaries.
+- Owner name: Final Project Owner.
+- Date: 2026-06-01.
 
-No GO decision is valid unless required approvals above are complete.
-
+This GO decision does not approve public MVP/build, production readiness, public launch, commercial launch, archive/delete/move, or compliance claims.

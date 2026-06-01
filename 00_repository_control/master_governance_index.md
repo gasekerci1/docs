@@ -33,14 +33,14 @@ Root-level folders are canonical. Nested `docs/` folders and older app/MVP/readi
 
 | Path | Purpose | Status | Approves anything? | Next required action |
 |---|---|---|---|---|
-| `00_repository_control/private_beta_blocker_register.md` | Lists blockers before private beta. | All blockers open. | No. | Resolve critical blockers. |
-| `00_repository_control/private_beta_owner_approval_packet.md` | Owner-facing private beta packet. | Default NO-GO. | No. | Complete required owner signoffs. |
-| `00_repository_control/private_beta_approval_decision_log.md` | Decision log for beta approvals. | Pending / not approved. | No. | Record signed approvals only when evidence exists. |
+| `00_repository_control/private_beta_blocker_register.md` | Lists blockers before private beta. | Blockers closed for limited private beta as of 2026-06-01. | No. | Keep later-stage blockers separate. |
+| `00_repository_control/private_beta_owner_approval_packet.md` | Owner-facing private beta packet. | Superseded by final signed GO. | No. | Historical reference only. |
+| `00_repository_control/private_beta_approval_decision_log.md` | Decision log for beta approvals. | Approved for limited private beta as of 2026-06-01. | Yes, limited private beta only. | Keep current as approvals change. |
 | `00_repository_control/private_beta_signoff_index.md` | Index of beta signoff docs. | Index only. | No. | Keep current as approval docs evolve. |
-| `00_repository_control/private_beta_go_no_go_review_packet.md` | Prior beta go/no-go packet. | NO-GO evidence. | No. | Supersede with signed owner approval only if evidence closes. |
+| `00_repository_control/private_beta_go_no_go_review_packet.md` | Prior beta go/no-go packet. | Superseded by final signed GO. | No. | Historical reference only. |
 | `00_repository_control/private_beta_owner_approval_template.md` | Area owner approval template. | Unsigned template. | No. | Complete only after evidence exists. |
-| `00_repository_control/private_beta_required_evidence_checklist.md` | Required evidence before beta. | Evidence missing. | No. | Fill only with completed evidence. |
-| `00_repository_control/private_beta_final_owner_go_no_go.md` | Final beta go/no-go template. | Default NO-GO. | No. | Final project owner signoff after area approvals. |
+| `00_repository_control/private_beta_required_evidence_checklist.md` | Required evidence before beta. | Evidence present for limited private beta as of 2026-06-01. | No. | Keep later-stage evidence separate. |
+| `00_repository_control/private_beta_final_owner_go_no_go.md` | Final beta go/no-go. | GO signed for limited private beta as of 2026-06-01. | Yes, limited private beta only. | Operate only within signed conditions. |
 
 ## Public MVP/Build Gates
 
@@ -66,7 +66,7 @@ Root-level folders are canonical. Nested `docs/` folders and older app/MVP/readi
 | `02_product/product_requirements.md` | Conceptual requirements and growth loop. | Planning only. | No implementation approval. | Add stage labels/acceptance detail when owner requests. |
 | `02_product/terminology_and_naming.md` | Naming rules for BecomingOS and lifeOS. | Canonical naming doc. | Naming only. | Keep future brand docs aligned. |
 | `02_product/private_beta_scope.md` | Defines private beta scope and safeguards. | Planning only. | No beta approval. | Owner approve or change participant cap and safeguards. |
-| `02_product/private_beta_readiness_checklist.md` | Beta readiness gates. | Default NO-GO. | No. | Complete approvals and evidence. |
+| `02_product/private_beta_readiness_checklist.md` | Beta readiness gates. | Superseded by signed limited private beta GO. | No. | Historical checklist only; keep later-stage gates separate. |
 | `02_product/mvp_scope.md` | Candidate MVP scope. | Candidate planning only. | No public MVP/build approval. | Complete public MVP gates. |
 | `02_product/non_goals.md` | Central prohibited claims and non-goals. | Canonical boundary doc. | No. | Use in all future copy/review. |
 | `02_product/landing_page_requirements_v0.1.md` | Draft landing-page requirements. | Draft evidence. | No. | Review against no-build/no-public-claims constraints before use. |
@@ -128,12 +128,12 @@ Root-level folders are canonical. Nested `docs/` folders and older app/MVP/readi
 | Path | Purpose | Status | Approves anything? | Next required action |
 |---|---|---|---|---|
 | `08_operations_testing_accessibility/release_readiness_checklist.md` | Stage readiness checklist. | Planning only. | No stage approval. | Review after each evidence update. |
-| `08_operations_testing_accessibility/private_beta_testing_plan.md` | Beta testing plan. | Draft / not approved. | No beta approval. | Research/testing owner review. |
-| `08_operations_testing_accessibility/private_beta_test_script.md` | Beta test script. | Draft / not approved. | No. | Approve before beta testing. |
-| `08_operations_testing_accessibility/private_beta_stop_criteria.md` | Beta stop criteria. | Draft / not approved. | No. | Approve before beta. |
-| `08_operations_testing_accessibility/private_beta_release_go_no_go.md` | Beta release decision template. | Default NO-GO. | No. | Complete after all beta evidence. |
+| `08_operations_testing_accessibility/private_beta_testing_plan.md` | Beta testing plan. | Approved for limited private beta. | Yes, limited private beta testing only. | Use within signed conditions. |
+| `08_operations_testing_accessibility/private_beta_test_script.md` | Beta test script. | Approved for limited private beta. | Yes, limited private beta testing only. | Use within signed conditions. |
+| `08_operations_testing_accessibility/private_beta_stop_criteria.md` | Beta stop criteria. | Approved for limited private beta. | Yes, limited private beta stop/pause decisions only. | Use within signed conditions. |
+| `08_operations_testing_accessibility/private_beta_release_go_no_go.md` | Beta release decision record. | GO signed for limited private beta. | Yes, limited private beta only. | Keep public MVP/build and production gates separate. |
 | `08_operations_testing_accessibility/mvp_testing_strategy.md` | MVP testing strategy. | Planning only; tests not run. | No public MVP/build approval. | Execute and document testing only after gates allow. |
-| `08_operations_testing_accessibility/analytics_event_taxonomy.md` | Privacy-safe analytics taxonomy. | Conceptual / not approved. | No analytics approval. | Privacy/legal/safety review. |
+| `08_operations_testing_accessibility/analytics_event_taxonomy.md` | Privacy-safe analytics taxonomy. | Approved for limited private beta analytics only. | Yes, limited private beta analytics only. | Keep public MVP/build and production gates separate. |
 | `08_operations_testing_accessibility/production_readiness_checklist.md` | Production readiness checklist. | PRODUCTION NO-GO. | No. | Complete production gates. |
 | `08_operations_testing_accessibility/incident_response_plan.md` | Planning-only incident response plan. | Not operationally approved. | No. | Assign owners and approve before live use. |
 | `08_operations_testing_accessibility/support_operations_stage_plan.md` | Support model by stage. | Planning only. | No support readiness. | Assign support owners and approve stage support. |
