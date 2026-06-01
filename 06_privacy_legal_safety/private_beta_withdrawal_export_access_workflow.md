@@ -1,6 +1,6 @@
 # Private Beta Withdrawal, Export, Access, Correction, And Deletion Workflow
 
-Current status: approval-ready draft. No live process is approved until reviewed by owner, privacy/legal, and security reviewers. This document does not approve private beta, implementation, public MVP build, production readiness, or compliance claims.
+Current status: review draft / modify required. No live process is approved until reviewed by owner, privacy/legal, and security reviewers. This document does not approve private beta, implementation, public MVP build, production readiness, or compliance claims.
 
 ## Requests Covered
 
@@ -78,6 +78,28 @@ Escalate to privacy/legal owner if:
 - Request cannot be completed as described.
 - Any exception is proposed.
 
+## NA-004 Review Findings
+
+Missing workflow steps or details:
+
+- Approved intake method is still a placeholder.
+- Approved response-time target is still a placeholder.
+- Approved export format is still a placeholder.
+- Completion-response channel is not defined.
+- Request ownership, backup owner, and escalation owner are not assigned.
+- Access/export scope does not yet define exact included and excluded fields by data category.
+- Correction workflow does not define how corrected data is propagated to source records, derived summaries, embeddings, exports, or provider-held data.
+- Withdrawal workflow does not define how consent withdrawal is reflected across data categories, memories, embeddings, provider-held records, analytics, and logs.
+- Edge cases for another person's data, Support Circle contacts, safety logs, and provider logs require owner/privacy/legal/security review.
+
+Testing evidence gaps:
+
+- No test evidence shows intake, acknowledgement, identity verification, classification, fulfilment, escalation, and completion confirmation work end to end.
+- No test evidence shows access/export output excludes other participants' data, support contact private details outside approved scope, safety logs, provider logs, and internal notes.
+- No test evidence shows correction updates retrieval and embedding state.
+- No test evidence shows withdrawal stops future processing across AI, analytics, embeddings, Today plans, Ask AI, and future outputs.
+- No test evidence shows response-time targets can be met.
+
 ## Approval Status
 
 - [ ] Approved
@@ -87,4 +109,3 @@ Escalate to privacy/legal owner if:
 Owner/privacy/legal/security notes:
 
 Date:
-

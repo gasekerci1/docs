@@ -1,6 +1,6 @@
 # Private Beta Data Deletion Workflow
 
-Current status: approval-ready draft. Requires owner, privacy, legal, and security review. This workflow does not approve private beta, implementation, public MVP build, production readiness, or compliance claims.
+Current status: review draft / modify required. Requires owner, privacy, legal, and security review. This workflow does not approve private beta, implementation, public MVP build, production readiness, or compliance claims.
 
 ## Scope
 
@@ -96,6 +96,27 @@ The deletion request log should contain only minimal administrative fields:
 
 Do not include sensitive request content or product memory in the deletion log.
 
+## NA-004 Review Findings
+
+Missing workflow steps or details:
+
+- Approved intake channel is still a placeholder.
+- Approved tester completion-response channel is still a placeholder.
+- Response-time target is not defined in this workflow.
+- Owner/reviewer roles for each deletion step are not assigned.
+- Provider-held data deletion depends on AI provider approval and provider deletion evidence, which are not complete.
+- Backup, restore, export, analytics, and operational log handling are not fully specified.
+- Exception handling does not define approval thresholds, retention limits, or escalation owners beyond privacy/legal/security review.
+- End-of-beta deletion versus anonymisation criteria are not operationally defined.
+
+Testing evidence gaps:
+
+- No test evidence shows a deletion request can be received, scoped, verified, completed, and confirmed.
+- No test evidence shows embeddings are invalidated or deleted after source deletion, edit, rejection, expiry, archive, or consent withdrawal.
+- No test evidence shows deleted or withdrawn data is excluded from AI retrieval, recommendations, Today plans, Ask AI, analytics, embeddings, and future outputs.
+- No test evidence shows provider deletion requests can be submitted and confirmed.
+- No test evidence shows deletion logs remain minimal and avoid sensitive free text.
+
 ## Approval Status
 
 - [ ] Approved
@@ -105,4 +126,3 @@ Do not include sensitive request content or product memory in the deletion log.
 Owner/privacy/legal/security notes:
 
 Date:
-
