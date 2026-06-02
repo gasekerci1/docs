@@ -14,7 +14,7 @@ Current status: repository dashboard only. This document does not approve privat
 | Private beta | GO for limited trusted private beta only |
 | Public MVP/build | NO-GO |
 | Production | NO-GO |
-| Public launch | NO-GO |
+| Public launch/commercial release | NO-GO |
 | Compliance claims | NO-GO |
 | Archive/delete/move | NO-GO except completed first approved exact duplicate batch |
 
@@ -68,7 +68,7 @@ Archive/delete/move status: NO-GO except completed first approved exact duplicat
 
 Completed approved archive action: EAL-ED-001, EAL-ED-002, EAL-ED-004, EAL-ED-005, and EAL-ED-006 were archived to `99_archive/duplicates/00_inbox/` with owner approval after checksum confirmation. Canonical source-original copies remain in `01-source-documents/originals/`.
 
-All other archive/delete/move actions remain NO-GO. Near duplicates, superseded drafts, old MVP/build/production/final/hardening files, source documents, and files missing checksum/canonical evidence remain unapproved for archive. Public MVP/build, production readiness, public launch, and compliance claims remain NO-GO.
+All other archive/delete/move actions remain NO-GO. Near duplicates, superseded drafts, old MVP/build/production/final/hardening files, source documents, and files missing checksum/canonical evidence remain unapproved for archive. Public MVP/build, production readiness, public launch, commercial release, and compliance claims remain NO-GO.
 
 Historical readiness evidence is tracked in `00_repository_control/historical_readiness_evidence_register.md`. Those files remain evidence only and do not approve public MVP/build, production readiness, public launch, commercial release, legal compliance, privacy compliance, security readiness, accessibility compliance, or WCAG compliance.
 
@@ -80,4 +80,5 @@ Historical readiness evidence is tracked in `00_repository_control/historical_re
 | Private beta | GO for limited trusted private beta only | Operate only within signed approvals and stop criteria |
 | Public MVP/build | NO-GO | Public MVP evidence gates and final owner approval |
 | Production | NO-GO | Production evidence gates and final owner approval |
+| Public launch/commercial release | NO-GO | Public launch/commercial release evidence gates and final owner approval |
 | Archive/delete/move | NO-GO except completed first approved exact duplicate batch | Traceability-backed archive approval packet signed by owner for any additional archive action |
