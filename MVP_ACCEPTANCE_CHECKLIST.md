@@ -1,5 +1,7 @@
 # MVP Acceptance Checklist
 
+> **Historical evidence only.** This document may contain old MVP, build, production, launch, final, release, hardening, or readiness wording. It does not approve current public MVP, public build, production readiness, public launch, commercial release, legal compliance, privacy compliance, security readiness, accessibility compliance, or WCAG compliance. Current controlling status is limited trusted private beta only unless a later owner-approved decision record says otherwise.
+
 This checklist is for the private personal-alpha MVP only. It is not a production launch checklist, clinical safety review, legal review, or public release approval.
 
 ## 1. Setup Checklist

@@ -1,5 +1,7 @@
 # Codex Product Experience Prompt Plan
 
+> **Historical evidence only.** This document may contain old MVP, build, production, launch, final, release, hardening, or readiness wording. It does not approve current public MVP, public build, production readiness, public launch, commercial release, legal compliance, privacy compliance, security readiness, accessibility compliance, or WCAG compliance. Current controlling status is limited trusted private beta only unless a later owner-approved decision record says otherwise.
+
 This document converts `docs/PRODUCT_EXPERIENCE_RECOMMENDATIONS.md` into a safe, phased Codex implementation plan. It is a planning-only document. Do not modify runtime app code, do not create migrations yet, do not edit `.env.local`, and do not commit while creating or updating this document.
 
 ## Current Working Baseline

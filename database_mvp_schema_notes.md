@@ -1,5 +1,7 @@
 # Database MVP Schema Notes
 
+> **Historical evidence only.** This document may contain old MVP, build, production, launch, final, release, hardening, or readiness wording. It does not approve current public MVP, public build, production readiness, public launch, commercial release, legal compliance, privacy compliance, security readiness, accessibility compliance, or WCAG compliance. Current controlling status is limited trusted private beta only unless a later owner-approved decision record says otherwise.
+
 This repo's current app uses Supabase tables directly from both API routes and the browser client. The reproducible MVP schema is in:
 
 `supabase/migrations/001_personal_alpha_mvp.sql`

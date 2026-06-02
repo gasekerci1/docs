@@ -1,5 +1,7 @@
 # Remaining Readiness Blockers
 
+> **Historical evidence only.** This document may contain old MVP, build, production, launch, final, release, hardening, or readiness wording. It does not approve current public MVP, public build, production readiness, public launch, commercial release, legal compliance, privacy compliance, security readiness, accessibility compliance, or WCAG compliance. Current controlling status is limited trusted private beta only unless a later owner-approved decision record says otherwise.
+
 ## Current State
 
 The uploaded `.docx` agent deliverable reports and the Market Validation Report have been added to the repository and mapped in `docs/07_analysis/agent_report_file_map.md`. Added reports do not mean the documents have been reviewed, accepted, approved, or made build-ready.

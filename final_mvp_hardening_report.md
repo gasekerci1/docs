@@ -1,5 +1,7 @@
 # Final MVP Hardening Report
 
+> **Historical evidence only.** This document may contain old MVP, build, production, launch, final, release, hardening, or readiness wording. It does not approve current public MVP, public build, production readiness, public launch, commercial release, legal compliance, privacy compliance, security readiness, accessibility compliance, or WCAG compliance. Current controlling status is limited trusted private beta only unless a later owner-approved decision record says otherwise.
+
 Date: 2026-05-28
 
 Scope: static hardening pass for the private personal-alpha MVP. This was not a penetration test, production readiness review, or legal/compliance review.
