@@ -12,6 +12,8 @@ Older files in this repository are supporting evidence unless they conflict with
 
 If a conflict exists, resolve it in favour of `02_product/becomingos_product_specification.docx` unless a later explicit owner approval says otherwise. Do not silently remove conflicting information; preserve it as traceability evidence and document the resolution.
 
+Old MVP/build/production/final/hardening/readiness files are historical evidence only as recorded in `00_repository_control/historical_readiness_evidence_register.md`. They do not approve public MVP/build, production readiness, public launch, commercial release, legal compliance, privacy compliance, security readiness, accessibility compliance, or WCAG compliance.
+
 ## Key Source-Of-Truth Decisions
 
 - External product name: BecomingOS.
@@ -40,6 +42,7 @@ If a conflict exists, resolve it in favour of `02_product/becomingos_product_spe
 - Private beta retention must be defined, with 90 days suggested.
 - Beta data must be deleted or anonymised after beta.
 - Beta data must not be reused in production without renewed consent.
+- Old MVP/build/production/final/hardening/readiness files are historical evidence only and do not override the current source-of-truth status or stage gates.
 
 ## Conflict Rule
 

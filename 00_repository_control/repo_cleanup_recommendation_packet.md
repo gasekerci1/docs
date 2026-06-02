@@ -9,7 +9,8 @@ Product naming and stage assumptions used in this packet:
 - Current stage: pre-MVP with limited trusted private beta only.
 - Root documentation folders are canonical.
 - Nested `docs/` folders are evidence/control outputs unless later promoted.
-- Old MVP/build/production/final/hardening wording is historical evidence only unless separately approved.
+- Old MVP/build/production/final/hardening/readiness wording is historical evidence only unless separately approved; see `00_repository_control/historical_readiness_evidence_register.md`.
+- Historical readiness evidence does not approve public MVP/build, production readiness, public launch, commercial release, legal compliance, privacy compliance, security readiness, accessibility compliance, or WCAG compliance.
 - OpenAI/private AI use is approved only for narrow private beta text use. This packet does not imply broad approval for file, image, audio, video, vector, wearable, or passive monitoring data.
 - Analytics must not collect sensitive free text or crisis text.
 - Crisis/safety logs must remain minimal, segregated, access-controlled, retention-limited, and excluded from memory, embeddings, analytics, and future AI outputs.
@@ -23,6 +24,7 @@ Sources reviewed:
 - `00_repository_control/contradiction_register.md`
 - `00_repository_control/source_of_truth_register.md`
 - `00_repository_control/source_traceability_map.md`
+- `00_repository_control/historical_readiness_evidence_register.md`
 - `README.md`
 
 ## 1. Current Decision Status
@@ -31,6 +33,7 @@ Sources reviewed:
 - Limited private beta approval does not equal archive approval.
 - No destructive cleanup is authorised by this document.
 - The private beta approval is limited to trusted participants and does not approve public MVP/build, public launch, production readiness, legal compliance, privacy compliance, security readiness, WCAG compliance, or broad AI/data processing.
+- Old MVP/build/production/final/hardening/readiness files are historical evidence only as tracked in `00_repository_control/historical_readiness_evidence_register.md`; they do not approve public MVP/build, production readiness, public launch, commercial release, legal compliance, privacy compliance, security readiness, accessibility compliance, or WCAG compliance.
 - `02_product/becomingos_product_specification.docx` remains the highest-priority product source of truth. Do not move, rename, delete, archive, or modify source DOCX files through this cleanup packet.
 
 ## 2. Recommended Cleanup Principles
@@ -40,8 +43,8 @@ Sources reviewed:
 - Confirm exact duplicates by checksum before archive.
 - Keep the canonical root documentation structure.
 - Treat nested `docs/` files as historical/control evidence unless owner-approved for promotion.
-- Label old MVP/build/production/final/hardening language as historical evidence.
-- Do not imply production, public MVP, legal, privacy, security, or accessibility approval.
+- Label old MVP/build/production/final/hardening/readiness language as historical evidence.
+- Do not imply production, public MVP, public launch, commercial release, legal, privacy, security, accessibility, or WCAG approval.
 - Preserve traceability from each future archived item to its canonical replacement or evidence role.
 - Archive raw duplicates before higher-risk categorized or source-original files.
 - Do not archive unresolved, high-risk, or compliance-relevant evidence until canonical replacements and owner approvals exist.

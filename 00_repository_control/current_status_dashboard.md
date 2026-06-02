@@ -15,6 +15,7 @@ Current status: repository dashboard only. This document does not approve privat
 | Public MVP/build | NO-GO |
 | Production | NO-GO |
 | Public launch | NO-GO |
+| Compliance claims | NO-GO |
 | Archive/delete/move | NO-GO except completed first approved exact duplicate batch |
 
 ## Source-Of-Truth Status
@@ -22,6 +23,7 @@ Current status: repository dashboard only. This document does not approve privat
 - `02_product/becomingos_product_specification.docx` is the named highest-priority product source of truth.
 - Control documents have been updated to reflect that the source file resides at this path. The previous nested path and misspelled filename are no longer referenced. Do not rename, move, delete, archive, or silently resolve the file without owner approval.
 - Older documents and nested `docs/` folders are supporting evidence unless they conflict with the source-of-truth file.
+- Old MVP/build/production/final/hardening/readiness files are historical evidence only as recorded in `00_repository_control/historical_readiness_evidence_register.md`.
 
 ## Owner Decision Status
 
@@ -58,6 +60,7 @@ Current status: repository dashboard only. This document does not approve privat
 | Accessibility | Prototype-flow QA evidence approved; no WCAG/compliance claim |
 | Operations/support | Beta Operations Manager assigned for limited private beta |
 | Analytics | Privacy-safe taxonomy approved for limited private beta only |
+| Historical readiness evidence | Old MVP/build/production/final/hardening/readiness files are historical evidence only; they do not approve public MVP/build, production readiness, public launch, commercial release, legal compliance, privacy compliance, security readiness, accessibility compliance, or WCAG compliance. |
 
 ## Archive Status
 
@@ -66,6 +69,8 @@ Archive/delete/move status: NO-GO except completed first approved exact duplicat
 Completed approved archive action: EAL-ED-001, EAL-ED-002, EAL-ED-004, EAL-ED-005, and EAL-ED-006 were archived to `99_archive/duplicates/00_inbox/` with owner approval after checksum confirmation. Canonical source-original copies remain in `01-source-documents/originals/`.
 
 All other archive/delete/move actions remain NO-GO. Near duplicates, superseded drafts, old MVP/build/production/final/hardening files, source documents, and files missing checksum/canonical evidence remain unapproved for archive. Public MVP/build, production readiness, public launch, and compliance claims remain NO-GO.
+
+Historical readiness evidence is tracked in `00_repository_control/historical_readiness_evidence_register.md`. Those files remain evidence only and do not approve public MVP/build, production readiness, public launch, commercial release, legal compliance, privacy compliance, security readiness, accessibility compliance, or WCAG compliance.
 
 ## Stage Dashboard
 
