@@ -4,7 +4,19 @@
 
 This packet prepares an owner review for future repository cleanup. It does not approve any archive, move, delete, rename, or source-file removal.
 
-Current archive status: **ARCHIVE NO-GO**.
+Current archive status: **ARCHIVE NO-GO except the completed owner-approved first exact duplicate batch**.
+
+Completed approved archive action:
+
+- EAL-ED-001 `00_inbox/Wording guide creation.docx`
+- EAL-ED-002 `00_inbox/Wording and Tone Guide.docx`
+- EAL-ED-004 `00_inbox/Research plan development.docx`
+- EAL-ED-005 `00_inbox/Research educational onboarding.docx`
+- EAL-ED-006 `00_inbox/Research Agent Output Summary.docx`
+
+These five checksum-confirmed raw inbox duplicates were moved to `99_archive/duplicates/00_inbox/` with owner approval. Their canonical source-original copies remain in `01-source-documents/originals/`.
+
+Archive/delete/move remains NO-GO for all other files, including EAL-ED-003, near duplicates, superseded drafts, old MVP/build/production/final/hardening files, source documents, files missing checksum/canonical evidence, public MVP/build evidence, production evidence, public launch materials, and compliance-claim materials.
 
 The repository root is the canonical documentation structure. Nested `docs/` files remain evidence/control outputs unless an owner later promotes or archives them through a traceability-backed decision.
 
@@ -34,7 +46,7 @@ Archive cleanup is currently **not approved** because:
 - No rollback plan has been approved.
 - No branch/PR cleanup workflow has been approved.
 
-No file should be moved, deleted, renamed, or archived until the owner signs an exact cleanup list.
+No additional file should be moved, deleted, renamed, or archived until the owner signs an exact cleanup list.
 
 ## Evidence reviewed
 
@@ -312,4 +324,3 @@ Owner notes:
 Date:
 
 Owner:
-

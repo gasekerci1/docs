@@ -15,7 +15,7 @@ Evidence used: `docs/00_repository_control/file_inventory.md`, `docs/00_reposito
 | Source folder/file group | Current role | Canonical root destination | Status | Source-of-truth DOCX override? | Notes on conflicts |
 |---|---|---|---|---|---|
 | `02_product/becomingos_product_specification.docx` | Product source of truth named by owner | `00_repository_control/source_of_truth_register.md`; `02_product/*`; related root canonical docs | Retained evidence | N/A: this is the product override source | The file exists at this path. The previous nested `docs/02_product` path and the typographical variant `becomings_product_specification.docx` are no longer referenced in control documents. Do not rename or move the file without owner approval. |
-| `00_inbox/` | Raw import and duplicate source evidence | Topic-specific root canonical docs; `00_repository_control/source_traceability_map.md` | Duplicate / retained evidence | Yes | Many files duplicate originals or categorized copies. Preserve import provenance until canonical docs and traceability are approved. |
+| `00_inbox/` | Raw import and duplicate source evidence | Topic-specific root canonical docs; `00_repository_control/source_traceability_map.md`; `99_archive/duplicates/00_inbox/` for owner-approved exact duplicates | Partly archived / retained evidence | Yes | EAL-ED-001, EAL-ED-002, EAL-ED-004, EAL-ED-005, and EAL-ED-006 were archived with owner approval after checksum confirmation. Canonical copies remain in `01-source-documents/originals/`. All other `00_inbox/` files remain unapproved for archive unless separately approved. |
 | `01-source-documents/originals/` | Preserved source-original evidence baseline | All root canonical docs as cited evidence | Retained evidence | Yes | Do not move or archive. Owner has approved preservation as evidence baseline. |
 | `01_product/` | Older product, PRD, prototype, brand, wording evidence | `02_product/product_brief.md`; `02_product/product_requirements.md`; `02_product/terminology_and_naming.md`; `02_product/private_beta_scope.md`; future `09_brand_experience/*` | Superseded later / retained evidence | Yes | Conflicts on BecomingOS/lifeOS/LifeOS naming and stage. Source DOCX resolves: BecomingOS external, lifeOS internal alias, pre-MVP with limited private beta only. |
 | `01_product/brand_kit/` | Draft brand evidence | Future `09_brand_experience/brand_kit.md`; current naming in `02_product/terminology_and_naming.md` | Superseded later | Yes | LifeOS brand-source claims conflict with BecomingOS external name. Treat as draft brand evidence. |
@@ -40,6 +40,18 @@ Evidence used: `docs/00_repository_control/file_inventory.md`, `docs/00_reposito
 | `scripts/` | Consolidation helper scripts | Future root process notes if needed | Retained evidence / unresolved | Yes for product claims | Do not run cleanup/archive scripts without owner approval. |
 | Top-level app/MVP audit files | Implementation-adjacent evidence and older readiness/audit notes | `00_repository_control/canonical_gap_check.md`; future release readiness/product experience docs | Unresolved / old evidence | Yes | App, database, MVP, and hardening references are evidence only and do not approve code, public MVP, or production readiness. |
 | `README.md` | Root repository overview | `README.md` | Canonical root doc | Yes | Must continue to point to source-of-truth register and no-build/no-production status. |
+
+## Completed Archive Traceability
+
+| Archive ID | Archived path | Canonical copy that remains | Evidence | Status |
+|---|---|---|---|---|
+| EAL-ED-001 | `99_archive/duplicates/00_inbox/Wording guide creation.docx` | `01-source-documents/originals/Wording guide creation.docx` | ED-001 exact SHA-256 duplicate group | Archived with owner approval |
+| EAL-ED-002 | `99_archive/duplicates/00_inbox/Wording and Tone Guide.docx` | `01-source-documents/originals/Wording and Tone Guide.docx` | ED-002 exact SHA-256 duplicate group | Archived with owner approval |
+| EAL-ED-004 | `99_archive/duplicates/00_inbox/Research plan development.docx` | `01-source-documents/originals/Research plan development.docx` | ED-004 exact SHA-256 duplicate group | Archived with owner approval |
+| EAL-ED-005 | `99_archive/duplicates/00_inbox/Research educational onboarding.docx` | `01-source-documents/originals/Research educational onboarding.docx` | ED-005 exact SHA-256 duplicate group | Archived with owner approval |
+| EAL-ED-006 | `99_archive/duplicates/00_inbox/Research Agent Output Summary.docx` | `01-source-documents/originals/Research Agent Output Summary.docx` | ED-006 exact SHA-256 duplicate group | Archived with owner approval |
+
+Archive/delete/move remains NO-GO for near duplicates, superseded drafts, old MVP/build/production/final/hardening files, source documents, and anything missing checksum/canonical evidence. Public MVP/build, production readiness, public launch, and compliance claims remain NO-GO.
 
 ## Major Document Group Routing
 

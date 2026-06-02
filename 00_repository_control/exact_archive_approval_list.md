@@ -2,17 +2,18 @@
 
 ## 1. Purpose
 
-This document identifies exact file/folder archive candidates for owner review.
+This document identifies exact file/folder archive candidates for owner review and records the first owner-approved exact duplicate archive batch.
 
-- This document does not approve archive, move, delete, or rename operations.
-- Archive/delete/move remains NO-GO until the owner explicitly approves the exact list.
-- This document is for review and decision-making only.
+- This document does not approve archive, move, delete, or rename operations beyond the explicitly approved first exact duplicate batch.
+- Archive/delete/move remains NO-GO for all other files until the owner explicitly approves the exact list.
+- This document is for review, decision-making, and recording the first approved exact duplicate archive batch only.
 
 ## 2. Current Cleanup Status
 
 - Documentation/control updates are allowed.
 - Destructive cleanup is not authorised.
 - Exact duplicates are the first proposed archive category.
+- EAL-ED-001, EAL-ED-002, EAL-ED-004, EAL-ED-005, and EAL-ED-006 were archived with owner approval to `99_archive/duplicates/00_inbox/`.
 - Near duplicates, superseded drafts, and old MVP/build/production files require separate later review.
 - BecomingOS is the external product name; lifeOS is an internal/historical repository alias.
 - The product remains pre-MVP with limited trusted private beta only.
@@ -26,12 +27,12 @@ Exact duplicate evidence comes from `00_repository_control/duplicate_file_map.md
 
 | ID | Original path | Proposed archive destination | Duplicate of / canonical path | Evidence type | Checksum status | Risk level | Owner approval status | Recommended action |
 |---|---|---|---|---|---|---|---|---|
-| EAL-ED-001 | `00_inbox/Wording guide creation.docx` | `99_archive/duplicates/00_inbox/Wording guide creation.docx` | `01-source-documents/originals/Wording guide creation.docx` | ED-001 exact duplicate | Confirmed in duplicate map | Medium | Pending | Candidate for exact duplicate archive review only. |
-| EAL-ED-002 | `00_inbox/Wording and Tone Guide.docx` | `99_archive/duplicates/00_inbox/Wording and Tone Guide.docx` | `01-source-documents/originals/Wording and Tone Guide.docx` | ED-002 exact duplicate | Confirmed in duplicate map | Medium | Pending | Candidate for exact duplicate archive review only. |
+| EAL-ED-001 | `00_inbox/Wording guide creation.docx` | `99_archive/duplicates/00_inbox/Wording guide creation.docx` | `01-source-documents/originals/Wording guide creation.docx` | ED-001 exact duplicate | Confirmed in duplicate map | Medium | Approved and archived | Archived with owner approval; canonical source-original copy remains. |
+| EAL-ED-002 | `00_inbox/Wording and Tone Guide.docx` | `99_archive/duplicates/00_inbox/Wording and Tone Guide.docx` | `01-source-documents/originals/Wording and Tone Guide.docx` | ED-002 exact duplicate | Confirmed in duplicate map | Medium | Approved and archived | Archived with owner approval; canonical source-original copy remains. |
 | EAL-ED-003 | `00_inbox/Today Directive Model.docx` | `99_archive/duplicates/00_inbox/Today Directive Model.docx` | `01-source-documents/originals/Today Directive Model.docx` | ED-003 exact duplicate | Confirmed in duplicate map | Medium | Pending | Candidate for exact duplicate archive review only. |
-| EAL-ED-004 | `00_inbox/Research plan development.docx` | `99_archive/duplicates/00_inbox/Research plan development.docx` | `01-source-documents/originals/Research plan development.docx` | ED-004 exact duplicate | Confirmed in duplicate map | Medium | Pending | Candidate for exact duplicate archive review only. |
-| EAL-ED-005 | `00_inbox/Research educational onboarding.docx` | `99_archive/duplicates/00_inbox/Research educational onboarding.docx` | `01-source-documents/originals/Research educational onboarding.docx` | ED-005 exact duplicate | Confirmed in duplicate map | Medium | Pending | Candidate for exact duplicate archive review only. |
-| EAL-ED-006 | `00_inbox/Research Agent Output Summary.docx` | `99_archive/duplicates/00_inbox/Research Agent Output Summary.docx` | `01-source-documents/originals/Research Agent Output Summary.docx` | ED-006 exact duplicate | Confirmed in duplicate map | Medium | Pending | Candidate for exact duplicate archive review only. |
+| EAL-ED-004 | `00_inbox/Research plan development.docx` | `99_archive/duplicates/00_inbox/Research plan development.docx` | `01-source-documents/originals/Research plan development.docx` | ED-004 exact duplicate | Confirmed in duplicate map | Medium | Approved and archived | Archived with owner approval; canonical source-original copy remains. |
+| EAL-ED-005 | `00_inbox/Research educational onboarding.docx` | `99_archive/duplicates/00_inbox/Research educational onboarding.docx` | `01-source-documents/originals/Research educational onboarding.docx` | ED-005 exact duplicate | Confirmed in duplicate map | Medium | Approved and archived | Archived with owner approval; canonical source-original copy remains. |
+| EAL-ED-006 | `00_inbox/Research Agent Output Summary.docx` | `99_archive/duplicates/00_inbox/Research Agent Output Summary.docx` | `01-source-documents/originals/Research Agent Output Summary.docx` | ED-006 exact duplicate | Confirmed in duplicate map | Medium | Approved and archived | Archived with owner approval; canonical source-original copy remains. |
 | EAL-ED-007 | `00_inbox/Recommendation Decision Table.docx` | `99_archive/duplicates/00_inbox/Recommendation Decision Table.docx` | `01-source-documents/originals/Recommendation Decision Table.docx` | ED-007 exact duplicate | Confirmed in duplicate map | Medium | Pending | Candidate for exact duplicate archive review only. |
 | EAL-ED-008 | `00_inbox/Question system design.docx` | `99_archive/duplicates/00_inbox/Question system design.docx` | `01-source-documents/originals/Question system design.docx` | ED-008 exact duplicate | Confirmed in duplicate map | Medium | Pending | Candidate for exact duplicate archive review only. |
 | EAL-ED-009 | `00_inbox/My OS Memory Model.docx` | `99_archive/duplicates/00_inbox/My OS Memory Model.docx` | `01-source-documents/originals/My OS Memory Model.docx` | ED-009 exact duplicate | Confirmed in duplicate map | Medium | Pending | Candidate for exact duplicate archive review only; verify filename whitespace before any command. |
@@ -85,15 +86,15 @@ Exact duplicate evidence comes from `00_repository_control/duplicate_file_map.md
 
 ## 4. First Recommended Archive Batch
 
-This first-batch proposal contains only lower-risk raw `00_inbox/` exact checksum duplicates where a source-original canonical copy remains. This is a proposal only. No archive command should be run without owner-approved IDs.
+This first-batch proposal contained only lower-risk raw `00_inbox/` exact checksum duplicates where a source-original canonical copy remains. The owner approved EAL-ED-001, EAL-ED-002, EAL-ED-004, EAL-ED-005, and EAL-ED-006, and those five files were archived to `99_archive/duplicates/00_inbox/`. No other archive command should be run without owner-approved IDs.
 
 | Source path | Destination path | Why safe | What canonical copy remains | What evidence confirms duplication | Owner approval checkbox |
 |---|---|---|---|---|---|
-| `00_inbox/Wording guide creation.docx` | `99_archive/duplicates/00_inbox/Wording guide creation.docx` | Raw inbox duplicate; source-original copy remains. | `01-source-documents/originals/Wording guide creation.docx` | ED-001 exact SHA-256 duplicate group in duplicate map. | [ ] Approve EAL-ED-001 |
-| `00_inbox/Wording and Tone Guide.docx` | `99_archive/duplicates/00_inbox/Wording and Tone Guide.docx` | Raw inbox duplicate; source-original copy remains. | `01-source-documents/originals/Wording and Tone Guide.docx` | ED-002 exact SHA-256 duplicate group in duplicate map. | [ ] Approve EAL-ED-002 |
-| `00_inbox/Research plan development.docx` | `99_archive/duplicates/00_inbox/Research plan development.docx` | Raw inbox duplicate; source-original copy remains. | `01-source-documents/originals/Research plan development.docx` | ED-004 exact SHA-256 duplicate group in duplicate map. | [ ] Approve EAL-ED-004 |
-| `00_inbox/Research educational onboarding.docx` | `99_archive/duplicates/00_inbox/Research educational onboarding.docx` | Raw inbox duplicate; source-original copy remains. | `01-source-documents/originals/Research educational onboarding.docx` | ED-005 exact SHA-256 duplicate group in duplicate map. | [ ] Approve EAL-ED-005 |
-| `00_inbox/Research Agent Output Summary.docx` | `99_archive/duplicates/00_inbox/Research Agent Output Summary.docx` | Raw inbox duplicate; source-original copy remains. | `01-source-documents/originals/Research Agent Output Summary.docx` | ED-006 exact SHA-256 duplicate group in duplicate map. | [ ] Approve EAL-ED-006 |
+| `00_inbox/Wording guide creation.docx` | `99_archive/duplicates/00_inbox/Wording guide creation.docx` | Raw inbox duplicate; source-original copy remains. | `01-source-documents/originals/Wording guide creation.docx` | ED-001 exact SHA-256 duplicate group in duplicate map. | [x] Approved and archived EAL-ED-001 |
+| `00_inbox/Wording and Tone Guide.docx` | `99_archive/duplicates/00_inbox/Wording and Tone Guide.docx` | Raw inbox duplicate; source-original copy remains. | `01-source-documents/originals/Wording and Tone Guide.docx` | ED-002 exact SHA-256 duplicate group in duplicate map. | [x] Approved and archived EAL-ED-002 |
+| `00_inbox/Research plan development.docx` | `99_archive/duplicates/00_inbox/Research plan development.docx` | Raw inbox duplicate; source-original copy remains. | `01-source-documents/originals/Research plan development.docx` | ED-004 exact SHA-256 duplicate group in duplicate map. | [x] Approved and archived EAL-ED-004 |
+| `00_inbox/Research educational onboarding.docx` | `99_archive/duplicates/00_inbox/Research educational onboarding.docx` | Raw inbox duplicate; source-original copy remains. | `01-source-documents/originals/Research educational onboarding.docx` | ED-005 exact SHA-256 duplicate group in duplicate map. | [x] Approved and archived EAL-ED-005 |
+| `00_inbox/Research Agent Output Summary.docx` | `99_archive/duplicates/00_inbox/Research Agent Output Summary.docx` | Raw inbox duplicate; source-original copy remains. | `01-source-documents/originals/Research Agent Output Summary.docx` | ED-006 exact SHA-256 duplicate group in duplicate map. | [x] Approved and archived EAL-ED-006 |
 
 ## 5. Files Not To Touch
 

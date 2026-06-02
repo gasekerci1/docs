@@ -15,7 +15,7 @@ Current status: repository dashboard only. This document does not approve privat
 | Public MVP/build | NO-GO |
 | Production | NO-GO |
 | Public launch | NO-GO |
-| Archive/delete/move | NO-GO |
+| Archive/delete/move | NO-GO except completed first approved exact duplicate batch |
 
 ## Source-Of-Truth Status
 
@@ -61,9 +61,11 @@ Current status: repository dashboard only. This document does not approve privat
 
 ## Archive Status
 
-Archive/delete/move status: NO-GO.
+Archive/delete/move status: NO-GO except completed first approved exact duplicate batch.
 
-Reason: source evidence must be preserved until canonical replacements, traceability, and owner approval are complete. Nested `docs/` folders and older app/MVP/readiness files remain evidence only.
+Completed approved archive action: EAL-ED-001, EAL-ED-002, EAL-ED-004, EAL-ED-005, and EAL-ED-006 were archived to `99_archive/duplicates/00_inbox/` with owner approval after checksum confirmation. Canonical source-original copies remain in `01-source-documents/originals/`.
+
+All other archive/delete/move actions remain NO-GO. Near duplicates, superseded drafts, old MVP/build/production/final/hardening files, source documents, and files missing checksum/canonical evidence remain unapproved for archive. Public MVP/build, production readiness, public launch, and compliance claims remain NO-GO.
 
 ## Stage Dashboard
 
@@ -73,4 +75,4 @@ Reason: source evidence must be preserved until canonical replacements, traceabi
 | Private beta | GO for limited trusted private beta only | Operate only within signed approvals and stop criteria |
 | Public MVP/build | NO-GO | Public MVP evidence gates and final owner approval |
 | Production | NO-GO | Production evidence gates and final owner approval |
-| Archive/delete/move | NO-GO | Traceability-backed archive approval packet signed by owner |
+| Archive/delete/move | NO-GO except completed first approved exact duplicate batch | Traceability-backed archive approval packet signed by owner for any additional archive action |
