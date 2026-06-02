@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BecomingOS helps you understand yourself, remember what matters, plan your days, and make decisions aligned with your future self." />
+  <title>BecomingOS | Private AI Life Operating System</title>
+  <style>
+    :root {
+      --deep: #17201B;
+      --bone: #F7F3EA;
+      --sand: #EFE6D8;
+      --olive: #26352B;
+      --sage: #8FA98B;
+      --gold: #C5A45D;
+      --muted: #4B554E;
+      --line: #DDD1C0;
+      --white: #FFFFFF;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background: var(--bone);
+      color: var(--deep);
+      font-family: Inter, system-ui, sans-serif;
+    }
+    a {
+      color: inherit;
+    }
+    .wrap {
+      width: min(1160px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 0;
+    }
+    .brand {
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 22px;
+      border-radius: 999px;
+      background: var(--olive);
+      color: white;
+      text-decoration: none;
+      font-weight: 800;
+      border: 1px solid var(--olive);
+    }
+    .btn.secondary {
+      background: transparent;
+      color: var(--olive);
+      border-color: var(--line);
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 48px;
+      align-items: center;
+      padding: 72px 0 96px;
+    }
+    .pill {
+      display: inline-flex;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--sand);
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(48px, 7vw, 84px);
+      line-height: 0.95;
+      letter-spacing: -0.06em;
+    }
+    h2 {
+      margin: 0;
+      font-size: clamp(34px, 4vw, 56px);
+      line-height: 1.02;
+      letter-spacing: -0.045em;
+    }
+    h3 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      letter-spacing: -0.025em;
+    }
+    p {
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 17px;
+    }
+    .hero-copy {
+      font-size: 21px;
+      max-width: 680px;
+    }
+    .actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .mockup {
+      background: var(--sand);
+      border: 1px solid var(--line);
+      border-radius: 34px;
+      padding: 22px;
+      box-shadow: 0 24px 70px rgba(23, 32, 27, 0.12);
+    }
+    .mockup-inner {
+      background: rgba(255,255,255,0.45);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 24px;
+    }
+    .mini-card {
+      background: var(--bone);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 16px;
+      margin-top: 14px;
+    }
+    .mini-card strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+    section {
+      padding: 88px 0;
+    }
+    .white {
+      background: white;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .center {
+      text-align: center;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 36px;
+    }
+    .card {
+      background: var(--sand);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 12px 30px rgba(23, 32, 27, 0.06);
+    }
+    .dark {
+      background: var(--olive);
+      color: white;
+    }
+    .dark p {
+      color: #E6EEE4;
+    }
+    .dark .card {
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(255,255,255,0.14);
+    }
+    .form {
+      max-width: 660px;
+      margin: 34px auto 0;
+      text-align: left;
+      display: grid;
+      gap: 14px;
+    }
+    label {
+      display: block;
+      font-weight: 800;
+      margin-bottom: 7px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 14px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: var(--bone);
+      font-size: 16px;
+    }
+    button {
+      padding: 15px 22px;
+      border: 0;
+      border-radius: 999px;
+      background: var(--olive);
+      color: white;
+      font-weight: 900;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    details {
+      background: var(--sand);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+      margin-top: 12px;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: 900;
+    }
+    footer {
+      padding: 28px 0;
+      text-align: center;
+      border-top: 1px solid var(--line);
+    }
+    @media (max-width: 850px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 36px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      nav {
+        align-items: flex-start;
+        gap: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav>
+      <div class="brand">BecomingOS</div>
+      <a class="btn" href="login.html">Login</a>
+    </nav>
+
+    <div class="hero">
+      <div>
+        <div class="pill">Pre-MVP • Limited private beta</div>
+        <h1>Build the future version of yourself.</h1>
+        <p class="hero-copy">
+          BecomingOS is a private AI life operating system that helps you understand yourself, remember what matters, plan your days, and make decisions aligned with who you want to become.
+        </p>
+        <p>Non-clinical. Private by design. You control what the AI remembers.</p>
+        <div class="actions">
+          <a class="btn" href="#signup">Join the Private Beta</a>
+          <a class="btn secondary" href="#how">See How It Works</a>
+        </div>
+      </div>
+
+      <div class="mockup">
+        <div class="mockup-inner">
+          <strong>Today Plan</strong>
+          <div class="mini-card">
+            <strong>Top priority</strong>
+            <p>Block 90 minutes for the goal you said matters most this month.</p>
+          </div>
+          <div class="mini-card">
+            <strong>Energy check</strong>
+            <p>Calendar load suggests a lower-intensity afternoon.</p>
+          </div>
+          <div class="mini-card">
+            <strong>Memory confirmation</strong>
+            <p>Nothing is saved permanently until you approve, edit or reject it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="white">
+    <div class="wrap center">
+      <h2>You do not need another habit tracker.</h2>
+      <p>
+        You need a system that remembers what matters. BecomingOS connects your values, goals, commitments, memories, decisions and daily actions into one private personal operating system.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>One system for self-discovery, memory, decisions and daily direction.</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Self-Discovery Journey</h3>
+          <p>Answer guided questions about values, priorities, habits, relationships and patterns.</p>
+        </div>
+        <div class="card">
+          <h3>Memory Engine</h3>
+          <p>Save only what you approve. Edit or delete memories anytime.</p>
+        </div>
+        <div class="card">
+          <h3>Future Self Builder</h3>
+          <p>Create a profile of the person you are becoming.</p>
+        </div>
+        <div class="card">
+          <h3>Decision Engine</h3>
+          <p>Get guidance that checks choices against your values, goals and future self.</p>
+        </div>
+        <div class="card">
+          <h3>Today Plan</h3>
+          <p>Turn priorities into a practical daily plan.</p>
+        </div>
+        <div class="card">
+          <h3>Life Capture</h3>
+          <p>Use photos, documents, voice notes and videos to turn real life into next steps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="white">
+    <div class="wrap">
+      <h2>How BecomingOS works</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>1. Answer guided questions</h3>
+          <p>Share values, goals, habits, responsibilities and priorities.</p>
+        </div>
+        <div class="card">
+          <h3>2. Confirm memory</h3>
+          <p>The AI suggests memory drafts. You approve, edit or reject them.</p>
+        </div>
+        <div class="card">
+          <h3>3. Build your Future Self</h3>
+          <p>Create a clear profile of who you are becoming.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="wrap">
+      <h2>Private by design. User-confirmed by default.</h2>
+      <p>
+        Nothing becomes durable memory unless you approve it. You can edit or delete saved memories. Rejected or deleted memories are not used by the AI.
+      </p>
+      <div class="grid">
+        <div class="card">
+          <h3>You choose what to share</h3>
+          <p>Only the context you provide is used.</p>
+        </div>
+        <div class="card">
+          <h3>You stay in control</h3>
+          <p>Approve, edit, reject or delete memory.</p>
+        </div>
+        <div class="card">
+          <h3>Clear boundaries</h3>
+          <p>Not therapy, diagnosis, crisis support, legal, medical or financial advice.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="signup" class="white">
+    <div class="wrap center">
+      <h2>Join the private beta.</h2>
+      <p>We are preparing a limited private beta for early users who want to help shape BecomingOS.</p>
+
+      <form class="form" onsubmit="event.preventDefault(); document.getElementById('success').style.display='block';">
+        <div>
+          <label for="name">First name</label>
+          <input id="name" required placeholder="Your first name" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" required placeholder="you@example.com" />
+        </div>
+        <div>
+          <label for="reason">Main reason for interest</label>
+          <textarea id="reason" rows="3" required placeholder="What are you trying to improve right now?"></textarea>
+        </div>
+        <div>
+          <label for="type">Which best describes you?</label>
+          <select id="type" required>
+            <option value="">Select one</option>
+            <option>Entrepreneur / builder</option>
+            <option>Carer / responsibility-heavy user</option>
+            <option>Busy parent</option>
+            <option>Rebuilding routines</option>
+            <option>Self-improvement user</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <button type="submit">Request Access</button>
+      </form>
+
+      <p id="success" style="display:none; font-weight:800;">
+        You are on the list. Selected early testers may be contacted when private beta places open.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>FAQ</h2>
+      <details>
+        <summary>What is BecomingOS?</summary>
+        <p>BecomingOS is a private AI life operating system for self-discovery, values, goals, memory, decisions and daily planning.</p>
+      </details>
+      <details>
+        <summary>Is BecomingOS therapy?</summary>
+        <p>No. BecomingOS is non-clinical. It is a reflection and planning system.</p>
+      </details>
+      <details>
+        <summary>What does the AI remember?</summary>
+        <p>Only user-approved memories should become durable memory.</p>
+      </details>
+      <details>
+        <summary>When will beta open?</summary>
+        <p>The private beta is not publicly scheduled yet.</p>
+      </details>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p>© 2026 BecomingOS. Pre-MVP private beta planning. Reflection and planning only.</p>
+    </div>
+  </footer>
+</body>
+</html>
