@@ -16,7 +16,9 @@ Completed approved archive action:
 
 These five checksum-confirmed raw inbox duplicates were moved to `99_archive/duplicates/00_inbox/` with owner approval. Their canonical source-original copies remain in `01-source-documents/originals/`.
 
-Archive/delete/move remains NO-GO for all other files, including EAL-ED-003, near duplicates, superseded drafts, old MVP/build/production/final/hardening files, source documents, files missing checksum/canonical evidence, public MVP/build evidence, production evidence, public launch materials, and compliance-claim materials.
+Archive/delete/move remains NO-GO for all other files, including EAL-ED-003, near duplicates, superseded drafts, old MVP/build/production/final/hardening/readiness files, source documents, files missing checksum/canonical evidence, public MVP/build evidence, production evidence, public launch materials, commercial release materials, and compliance-claim materials.
+
+Old MVP/build/production/final/hardening/readiness files are historical evidence only as tracked in `00_repository_control/historical_readiness_evidence_register.md`. They do not approve public MVP/build, public launch, production readiness, commercial release, legal compliance, privacy compliance, security readiness, accessibility compliance, or WCAG compliance.
 
 The repository root is the canonical documentation structure. Nested `docs/` files remain evidence/control outputs unless an owner later promotes or archives them through a traceability-backed decision.
 
@@ -58,6 +60,7 @@ Evidence sources:
 - `00_repository_control/current_status_dashboard.md`
 - `00_repository_control/next_actions_register.md`
 - `00_repository_control/source_traceability_map.md`
+- `00_repository_control/historical_readiness_evidence_register.md`
 - `00_repository_control/archive_candidate_plan.md`
 - `00_repository_control/root_vs_nested_docs_reconciliation.md`
 - `docs/00_repository_control/file_inventory.md`
@@ -73,7 +76,7 @@ Evidence sources:
 | Near duplicates | Research, synthesis, decisions, prompts, product, and review folders contain overlapping versions and topic duplicates. | Retain as evidence until canonical traceability is approved. |
 | Superseded drafts | Older product, AI/memory, privacy/legal/safety, architecture/API, operations, testing, and brand drafts are superseded by root canonical planning docs where conflicts exist. | Retain as source evidence. Do not silently remove information. |
 | Nested docs candidates | `docs/00_repository_control/` and `docs/10_agent_prompts/` contain earlier audit/control outputs and prompts. | Evidence only. Do not use as final source-of-truth structure. |
-| App/MVP audit candidates | Top-level MVP, audit, database, product experience, and hardening reports are evidence only. | Retain until owner decides archive or retention. |
+| App/MVP audit candidates | Top-level MVP, audit, database, product experience, and hardening reports are historical evidence only as tracked in `00_repository_control/historical_readiness_evidence_register.md`; they do not approve public MVP/build, public launch, production readiness, commercial release, legal compliance, privacy compliance, security readiness, accessibility compliance, or WCAG compliance. | Retain until owner decides archive or retention. |
 | Old review/evidence candidates | P0 reviews, readiness blockers, final outputs, and decision documents support historical traceability. | Retain until owner-approved canonical replacements and traceability exist. |
 
 ## Proposed cleanup principles
